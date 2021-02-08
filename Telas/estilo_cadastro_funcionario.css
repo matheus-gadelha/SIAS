@@ -49,3 +49,37 @@ h3{
 #email input{
 	width: 95%;
 }
+
+#conselho{
+	margin-left: 1%;
+	margin-top: 1%;
+}
+
+#end{
+	background-color: white;
+	border: 1px solid;
+	padding: 1%;
+	width: 85%;
+	margin-top: 1%;
+	border-radius: 2%;
+}
+
+#end input{
+	padding: 0.5%;
+	margin-top: 1.5%;
+}
+
+#rua{
+	position: relative;
+	width: 75%;
+}
+
+#num{
+	position: relative;
+	left: 1%;
+	width: 15%;
+}
+
+#cep{
+	width: 30%;
+}

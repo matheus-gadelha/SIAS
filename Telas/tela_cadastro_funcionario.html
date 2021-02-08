@@ -34,18 +34,58 @@
 
 			</div>	
 
-			<label>N° do Conselho</label><br/>
-			<input type="number" name="n_conselho"><br/>
+			<div id="conselho">
+				<label>Conselho</label><br/>
+				<select>
+					<option>CRM</option>
+					<option>CRO</option>
+					<option>COREN</option>
+				</select>
+				<select>
+					<option selected>UF:</option>
+					<option>SP</option>
+					<option>RJ</option>
+					<option>AL</option>
+					<option>PE</option>
+					<option>CE</option>
+					<option>PA</option>
+					<option>MG</option>
+					<option>RS</option>
+				</select>
+				<input type="number" placeholder="n° do conselho" name="n_conselho"><br/>
+			</div>
 
 			<label>Telefone da Instituição:</label><br/>
 			<input type="text" name="telefone" placeholder="Ex: (00)0 0000-0000" required><br/>
 
-			<label>Endereço:</label><br/>
-			<input type="text" name="rua" placeholder="Rua:" required><br/>
-			<input type="number" name="numero" placeholder="Número:" required><br/>
-			<input type="text" name="cidade" placeholder="Cidade:" required><br/>
-			<input type="text" name="estado" placeholder="Estado:" required><br/>
-			<input type="text" name="cep" placeholder="CEP: ex: 00000-000" required><br/>
+
+			<div id="end">
+				<label>Endereço:</label><br/>
+				<input type="text" name="rua" placeholder="Rua:" id="rua" required>
+				<input type="number" name="numero" placeholder="Número:" id="num" required>
+				<input type="text" name="cep" placeholder="CEP: ex: 63800-000" id="cep" required>
+				<select>
+					<option>Estado:</option>
+					<option>SP</option>
+					<option>RJ</option>
+					<option>AL</option>
+					<option>PE</option>
+					<option selected>CE</option>
+					<option>PA</option>
+					<option>MG</option>
+					<option>RS</option>
+				</select>
+				<select>
+					<option>Cidade:</option>
+					<option>Fortaleza</option>
+					<option>Maracanaú</option>
+					<option>Quixadá</option>
+					<option selected>Quixeramobim</option>
+					<option>Pedra Branca</option>
+					<option>Boa Viagem</option>
+					<option>Tauá</option>
+				</select>
+			</div>
 
 			<label>Função:</label><br/>
 			<select>
