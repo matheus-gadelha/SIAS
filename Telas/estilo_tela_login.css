@@ -1,0 +1,94 @@
+body{
+	background-color: #9ACD32;
+	/*background-image: url("pontes_neto.jpg");
+	background-repeat: repeat;
+	*/
+}
+
+#login{
+	position: absolute;
+  	width: 30%;
+  	height: 60%;
+  	left: 34%;
+  	top: 16%;
+  	background-color: white;
+  	opacity: 0.9;
+  	border-radius: 2%;
+  	border: 1px solid;
+}
+
+#login h3, h4{
+	text-align: center;
+	line-height: 0.4;
+}
+
+.estilo{
+  position: relative;
+  padding-top: 13px;
+  margin-left: 15%;
+}
+
+.estilo input{
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-appearance:none;
+}
+
+.estilo input:focus{
+  border: 2px solid #3951b2;
+}
+
+.estilo input::placeholder{
+  color:transparent;
+}
+
+.estilo label{
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+.estilo input:focus:required:invalid{
+  border: 1px solid red;
+}
+
+
+.estilo input:focus + label,
+.estilo input:not(:placeholder-shown) + label{
+  font-size: 17px;
+  top: 0;
+  color: black;
+}
+
+#botao{
+	width: 200px;
+	height: 50px;
+	margin-left: 25%;
+	margin-top: 12%;
+	font-weight: 1000;
+	font-size: 18px;
+	background-color: #1E90FF;
+	border-radius: 5%;
+	color: white;
+
+}
+
+#botao:hover{
+	box-shadow: 2px 5px gray;
+	transition: 0.5s;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Cadastro Funcionario</title>
+	<link rel="stylesheet" type="text/css" href="estilo_cadastro_funcionario.css">
+</head>
+<body>
+	<div id="cad_func">
+		<form action="" method="POST">
+			<h3>Cadastro de Funcionário</h3>
+
+			<label>Nome Completo:</label><br/>
+			<input type="text" name="nome_func" required><br/>
+
+			<label>Data de Nascimento:</label><br/>
+			<input type="date" name="dt_nascimento" required><br/>
+
+			<label>CPF:</label><br/>
+			<input type="text" name="cpf" placeholder="Ex: 000.000.000-00" required><br/>
+			
+			<label>N° do Conselho</label><br/>
+			<input type="number" name="n_conselho"><br/>
+
+			<label>Email:</label><br/>
+			<input type="text" name="email" required><br/>
+
+			<label>Telefone da Instituição:</label><br/>
+			<input type="text" name="telefone" placeholder="Ex: (00)0 0000-0000" required><br/>
+
+			<label>Endereço:</label><br/>
+			<input type="text" name="rua" placeholder="Rua:" required><br/>
+			<input type="number" name="numero" placeholder="Número:" required><br/>
+			<input type="text" name="cidade" placeholder="Cidade:" required><br/>
+			<input type="text" name="estado" placeholder="Estado:" required><br/>
+			<input type="text" name="cep" placeholder="CEP: ex: 00000-000" required><br/>
+
+			<label>Função:</label><br/>
+			<select>
+				<option selected>Selecione:</option>	
+				<option value="medico">Médico</option>
+				<option value="enfermeiro">Enfermeiro</option>
+				<option value="aux_farm">Auxiliar de Farmácia</option>
+				<option value="recpcionista">Recpcionista</option>
+				<option value="tecnico">Técnico</option>
+			</select>
+			<br/>
+
+			<label>Setor:</label><br/>
+			<select>
+				<option selected>Selecione:</option>	
+				<option value="ccg">Centro Cirurgico</option>
+				<option value="farm">Farmácia</option>
+				<option value="emrg">Emergência</option>
+				<option value="hote">Hotelaria</option>
+				<option value="nti">NTI</option>
+			</select>
+			<br/>
+
+			<label>Matrícula:</label><br/>
+			<input type="number" name="matricula"><br/>
+
+			<input type="reset" name="limpar" value="Limpar"><br/>
+			<input type="submit" name="enviar" value="Cadastrar"><br/>
+
+		</form>
+	</div>
+</body>
+</html>
