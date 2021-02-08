@@ -1,5 +1,51 @@
+h3{
+	position: relative;
+	margin-left: 1%;
+}
+
 #cad_func{
 	width: 500px;
-	height: 600px;
+	height: 98%;
 	background-color: #87CEFA;
+	padding: 0.2%;
+}
+
+#inf_pessoais{
+	position: relative;
+	background-color: white;
+	width: 85%;
+	margin-left: 1%;
+	margin-top: 0.2%;
+	padding: 1%;
+	border: 1px solid;
+	border-radius: 2%;
+}
+
+#cpf{
+	position: relative;
+	left: 50%;
+	margin-top: -10%;
+}
+#cpf input{
+	width: 45%;
+}
+
+#inf_pessoais input{
+	padding: 0.5%;
+	height: 22px;
+}
+
+#inf_pessoais label{
+	margin-top: 50%;
+	color: #4682B4;
+	font-family: times;
+
+}
+
+#nome input{
+	width: 95%;
+}
+
+#email input{
+	width: 95%;
 }

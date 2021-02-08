@@ -11,20 +11,31 @@
 		<form action="" method="POST">
 			<h3>Cadastro de Funcionário</h3>
 
-			<label>Nome Completo:</label><br/>
-			<input type="text" name="nome_func" required><br/>
+			<div id="inf_pessoais">
+				<div id="nome">
+					<label>Nome Completo:</label><br/>
+					<input type="text" name="nome_func" required><br/>
+				</div>
+				
+				<div id="dt">	
+					<label>Data de Nascimento:</label><br/>
+					<input type="date" name="dt_nascimento" required><br/>
+				</div>
 
-			<label>Data de Nascimento:</label><br/>
-			<input type="date" name="dt_nascimento" required><br/>
+				<div id="cpf">
+					<label>CPF:</label><br/>
+					<input type="text" name="cpf" placeholder="Ex: 000.000.000-00" required><br/>
+				</div>
 
-			<label>CPF:</label><br/>
-			<input type="text" name="cpf" placeholder="Ex: 000.000.000-00" required><br/>
-			
+				<div id="email">
+					<label>Email:</label><br/>
+					<input type="text" name="email" required><br/>
+				</div>
+
+			</div>	
+
 			<label>N° do Conselho</label><br/>
 			<input type="number" name="n_conselho"><br/>
-
-			<label>Email:</label><br/>
-			<input type="text" name="email" required><br/>
 
 			<label>Telefone da Instituição:</label><br/>
 			<input type="text" name="telefone" placeholder="Ex: (00)0 0000-0000" required><br/>
