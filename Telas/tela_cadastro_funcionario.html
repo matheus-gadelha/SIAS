@@ -34,6 +34,8 @@
 
 			</div>	
 
+			<hr>
+
 			<div id="conselho">
 				<label>Conselho</label><br/>
 				<select>
@@ -55,9 +57,12 @@
 				<input type="number" placeholder="n° do conselho" name="n_conselho"><br/>
 			</div>
 
+			<hr>
+
 			<label>Telefone da Instituição:</label><br/>
 			<input type="text" name="telefone" placeholder="Ex: (00)0 0000-0000" required><br/>
 
+			<hr>
 
 			<div id="end">
 				<label>Endereço:</label><br/>
@@ -87,30 +92,36 @@
 				</select>
 			</div>
 
-			<label>Função:</label><br/>
-			<select>
-				<option selected>Selecione:</option>	
-				<option value="medico">Médico</option>
-				<option value="enfermeiro">Enfermeiro</option>
-				<option value="aux_farm">Auxiliar de Farmácia</option>
-				<option value="recpcionista">Recpcionista</option>
-				<option value="tecnico">Técnico</option>
-			</select>
-			<br/>
+			<hr>
 
-			<label>Setor:</label><br/>
-			<select>
-				<option selected>Selecione:</option>	
-				<option value="ccg">Centro Cirurgico</option>
-				<option value="farm">Farmácia</option>
-				<option value="emrg">Emergência</option>
-				<option value="hote">Hotelaria</option>
-				<option value="nti">NTI</option>
-			</select>
-			<br/>
+			<div id="funcao">
+				<label>Função:</label><br/>
+				<select>
+					<option selected>Selecione:</option>	
+					<option value="medico">Médico</option>
+					<option value="enfermeiro">Enfermeiro</option>
+					<option value="aux_farm">Auxiliar de Farmácia</option>
+					<option value="recpcionista">Recpcionista</option>
+					<option value="tecnico">Técnico</option>
+				</select>
+				<br/>
 
-			<label>Matrícula:</label><br/>
-			<input type="number" name="matricula"><br/>
+				<label>Setor:</label><br/>
+				<select>
+					<option selected>Selecione:</option>	
+					<option value="ccg">Centro Cirurgico</option>
+					<option value="farm">Farmácia</option>
+					<option value="emrg">Emergência</option>
+					<option value="hote">Hotelaria</option>
+					<option value="nti">NTI</option>
+				</select>
+				<br/>
+
+				<label>Matrícula:</label><br/>
+				<input type="number" name="matricula"><br/>
+			</div>
+
+			<hr>
 
 			<input type="reset" name="limpar" value="Limpar"><br/>
 			<input type="submit" name="enviar" value="Cadastrar"><br/>
