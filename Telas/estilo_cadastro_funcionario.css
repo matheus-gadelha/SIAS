@@ -1,6 +1,8 @@
 h3{
 	position: relative;
 	margin-left: 1%;
+	margin-top: 0.8%;
+	margin-bottom: 5%;
 }
 
 #cad_func{
@@ -135,9 +137,17 @@ h3{
 }
 
 #conselho{
-	
+	background-color: white;
+	width: 85%;
+	padding: 1%;
+	border-radius: 2%;
+	border: 1px solid;
 }
 
 label{
 	color: #4682B4;
+}
+
+hr{
+	height: 2px;
 }
