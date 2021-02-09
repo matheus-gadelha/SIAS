@@ -144,10 +144,19 @@ h3{
 	border: 1px solid;
 }
 
+#tel{
+	background-color: white;
+	width: 85%;
+	padding: 1%;
+	border-radius: 2%;
+	border: 1px solid;
+}
+
 label{
 	color: #4682B4;
 }
 
 hr{
 	height: 2px;
+	background-color: gray;
 }
