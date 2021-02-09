@@ -83,3 +83,61 @@ h3{
 #cep{
 	width: 30%;
 }
+
+#cargo{
+	background-color: white;
+	border: 1px solid;
+	padding: 1%;
+	width: 85%;
+	border-radius: 2%;
+}
+#funcao{
+	position: relative;
+	margin-left: 40%;
+	margin-top: -9%;
+}
+
+#sub{
+	position: relative;
+	margin-left: 40%;
+	margin-top: -3%;
+	margin-bottom: 3%;
+	color: white;
+	background-color: blue;
+
+	
+}
+
+#res{
+	margin-left: 5%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	color: blue;
+	background-color: white;
+}
+
+#res:hover{
+	background-color: red;
+	color: white;
+	transition: 0.2;
+}
+
+.botao:hover{
+	box-shadow: 3px 5px gray;
+	transition: 0.3s;
+}
+
+.botao{
+	width: 20%;
+	height: 30px;
+	border: none;
+	border-radius: 3%;
+}
+
+#conselho{
+	
+}
+
+label{
+	color: #4682B4;
+}

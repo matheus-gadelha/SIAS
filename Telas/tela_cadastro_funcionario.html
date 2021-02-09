@@ -94,18 +94,12 @@
 
 			<hr>
 
-			<div id="funcao">
-				<label>Função:</label><br/>
-				<select>
-					<option selected>Selecione:</option>	
-					<option value="medico">Médico</option>
-					<option value="enfermeiro">Enfermeiro</option>
-					<option value="aux_farm">Auxiliar de Farmácia</option>
-					<option value="recpcionista">Recpcionista</option>
-					<option value="tecnico">Técnico</option>
-				</select>
-				<br/>
+			<div id="cargo">
 
+				<label>Matrícula:</label><br/>
+				<input type="number" name="matricula"><br/>
+
+				<br/>
 				<label>Setor:</label><br/>
 				<select>
 					<option selected>Selecione:</option>	
@@ -115,16 +109,26 @@
 					<option value="hote">Hotelaria</option>
 					<option value="nti">NTI</option>
 				</select>
-				<br/>
+				
 
-				<label>Matrícula:</label><br/>
-				<input type="number" name="matricula"><br/>
+				<div id="funcao">
+					<label>Função:</label><br/>
+					<select>
+						<option selected>Selecione:</option>	
+						<option value="medico">Médico</option>
+						<option value="enfermeiro">Enfermeiro</option>
+						<option value="aux_farm">Auxiliar de Farmácia</option>
+						<option value="recpcionista">Recpcionista</option>
+						<option value="tecnico">Técnico</option>
+					</select>
+				</div>
+				
 			</div>
 
 			<hr>
 
-			<input type="reset" name="limpar" value="Limpar"><br/>
-			<input type="submit" name="enviar" value="Cadastrar"><br/>
+			<input type="reset" name="limpar" value="Limpar" class="botao" id="res">
+			<input type="submit" name="enviar" value="Cadastrar" class="botao" id="sub">
 
 		</form>
 	</div>
