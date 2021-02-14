@@ -28,6 +28,43 @@
 				});
 			});
 	</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var modal = document.getElementById("back_modal");	
+
+			var btn1 = document.getElementById("search1");
+			var btn2 = document.getElementById("search2");
+			var btn3 = document.getElementById("search3");
+
+			var span = document.getElementsByClassName("close")[0];
+
+			btn1.onclick = function() {
+	 			modal.style.display = "block";
+			}
+
+			btn2.onclick = function() {
+	 			modal.style.display = "block";
+			}
+
+			btn3.onclick = function() {
+	 			modal.style.display = "block";
+			}
+
+			span.onclick = function() {
+	  			modal.style.display = "none";
+			}
+
+			window.onclick = function(event) {
+	  			if (event.target == modal) {
+	    			modal.style.display = "none";
+	  			}
+			}
+		});
+
+	</script>
+
 </head>
 	<body>
 
@@ -37,7 +74,7 @@
 
 			<input type="radio" class="radio" name="search_patient" id="sus">Cartão do Sus
 			<input type="radio" class="radio" name="search_patient" id="cpf">CPF
-			<input type="radio" class="radio" name="search_patient" id="nome">Nomes
+			<input type="radio" class="radio" name="search_patient" id="nome">Nome
 
 			<div class="patient" id="sus_patient">
 				<form action="" method="POST">
@@ -51,7 +88,7 @@
 
 					<br/>
 
-					<input type="submit" id="search" name="" value="Procurar">
+					<input type="button" id="search1" name="" value="Procurar">
 
 				</form>
 			</div>
@@ -68,7 +105,7 @@
 
 					<br/>
 
-					<input type="submit" id="search" name="" value="Procurar">
+					<input type="button" id="search2" name="" value="Procurar">
 
 				</form>
 			</div>
@@ -85,11 +122,26 @@
 
 					<br/>
 
-					<input type="submit" id="search" name="" value="Procurar">
+					<label>Data de nascimento:</label><br/>
+					<input type="date" name=""><br/>
+
+					<br/>
+
+					<input type="button" id="search3" name="" value="Procurar">
 
 				</form>
 			</div>
 
 		</div>
+
+		<div id="back_modal" class="modal">
+
+			<div id="register_patient" class="modal_content">
+				<span class="close">&times;</span>
+				<p>Teste modal</p>
+			</div>
+
+		</div>
+
 	</body>
 </html>
