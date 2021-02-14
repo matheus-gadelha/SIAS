@@ -1,0 +1,51 @@
+#sus_patient{
+	display: none;
+}
+
+#cpf_patient{
+	display: none;
+}
+
+#nome_patient{
+	display: none;
+}
+
+h3{
+	margin-top: 0.5%;
+}
+
+.radio{
+	margin-bottom: 3%;
+}
+
+#consult_patient{
+	background-color: #87CEEB;
+	padding: 0.8%;
+	width: 50%;
+}
+
+.patient{
+	padding: 1%;
+	width: 70%;
+	background-color: white;
+	box-shadow: 4px 5px gray;
+}
+
+.patient input{
+	width: 70%;
+	height: 20px;
+}
+
+#search{
+	border: none;
+	background-color: #3CB371;
+	color: white;
+	width: 20%;
+	height: 40px;
+	margin-left: 40%;
+}
+
+#search:hover{
+	box-shadow: 2px 4px gray;
+	transition: 0.3s;
+}

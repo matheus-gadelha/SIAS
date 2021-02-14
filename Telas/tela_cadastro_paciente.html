@@ -3,10 +3,93 @@
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="estilo/estilo_tela_login.css">
+	<title>Cadastro Paciente</title>
+	<link rel="stylesheet" type="text/css" href="estilo/estilo_tela_cadastro_funcionario.css">
+	<script type="text/javascript" src="jquery-3.5.1.js"></script>
+	
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$(".radio").on("click", function(){
+					if($("#sus").is(":checked")){
+						$("#sus_patient").fadeIn(0);
+						$("#cpf_patient").fadeOut(0);
+						$("#nome_patient").fadeOut(0);
+
+					}else if($("#cpf").is(":checked")){
+						$("#cpf_patient").fadeIn(0);
+						$("#sus_patient").fadeOut(0);
+						$("#nome_patient").fadeOut(0);
+
+					}else if($("#nome").is(":checked")){
+						$("#nome_patient").fadeIn(0);
+						$("#sus_patient").fadeOut(0);
+						$("#cpf_patient").fadeOut(0);
+					}
+				});
+			});
+	</script>
 </head>
 	<body>
-		
+
+		<div id="consult_patient">
+
+			<h3>Pesquisar Por:</h3>
+
+			<input type="radio" class="radio" name="search_patient" id="sus">Cartão do Sus
+			<input type="radio" class="radio" name="search_patient" id="cpf">CPF
+			<input type="radio" class="radio" name="search_patient" id="nome">Nomes
+
+			<div class="patient" id="sus_patient">
+				<form action="" method="POST">
+					<label>Cartão do SUS:</label><br/>
+					<input type="text" name="cartao_sus"><br/>
+
+					<br/>
+
+					<label>Paciente:</label><br/>
+					<input type="text" name="nome"><br/>
+
+					<br/>
+
+					<input type="submit" id="search" name="" value="Procurar">
+
+				</form>
+			</div>
+
+			<div class="patient" id="cpf_patient">
+				<form action="" method="POST">
+					<label>CPF:</label><br/>
+					<input type="text" name="cpf"><br/>
+
+					<br/>
+
+					<label>Paciente:</label><br/>
+					<input type="text" name="nome"><br/>
+
+					<br/>
+
+					<input type="submit" id="search" name="" value="Procurar">
+
+				</form>
+			</div>
+
+			<div class="patient" id="nome_patient">
+				<form action="" method="POST">
+					<label>Paciente:</label><br/>
+					<input type="text" name="nome"><br/>
+
+					<br/>
+
+					<label>Nome da Mãe:</label><br/>
+					<input type="text" name="mother_patient"><br/>
+
+					<br/>
+
+					<input type="submit" id="search" name="" value="Procurar">
+
+				</form>
+			</div>
+
+		</div>
 	</body>
 </html>
