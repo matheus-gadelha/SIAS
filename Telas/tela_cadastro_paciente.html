@@ -138,7 +138,42 @@
 
 			<div id="register_patient" class="modal_content">
 				<span class="close">&times;</span>
-				<p>Teste modal</p>
+
+				<h3>Paciente não encontrado!</h3>
+				<h4>Realize o cadastro do mesmo</h4>
+
+				<form action="" method="POST">
+					<label>CNS(Cadastro Nacional de Saúde)</label><br/>
+					<input type="text" name="cns"><br/>
+
+					<br/>
+
+					<label>Paciente</label><br/>
+					<input type="text" name="regs_name_patient" required><br/>
+
+					<br/>
+
+					<div id="social">
+						<label>Nome Social?</label><br/>
+						<input type="radio" id="sim_nsocial" name="n_social" value="sim">Sim
+						<input type="radio" id="nao_nsocial" name="n_social" value="nao">Não
+
+						<div id="social-nome">
+							<label>Nome Social:</label><br/>
+							<input type="text" name="name_social" disabled>
+						</div>
+						
+					</div>
+
+					<br/>
+
+
+
+					<br/>
+
+					<input type="submit" name="register" value="Cadastrar">
+				</form>
+
 			</div>
 
 		</div>

@@ -114,3 +114,23 @@ h3{
   text-decoration: none;
   cursor: pointer;
 }
+
+#register_patient{
+	background-color: ;
+}
+
+#register_patient h3, h4{
+	text-align: center; 
+}
+
+#social{
+	margin-left: 30%;
+	margin-top: -5%;
+}
+
+#social-nome{
+	margin-left: 20%;
+	margin-top: -5.5%;
+}
+
+
