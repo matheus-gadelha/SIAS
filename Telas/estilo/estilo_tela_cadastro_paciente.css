@@ -1,0 +1,136 @@
+#sus_patient{
+	display: none;
+}
+
+#cpf_patient{
+	display: none;
+}
+
+#nome_patient{
+	display: none;
+}
+
+h3{
+	margin-top: 0.5%;
+}
+
+.radio{
+	margin-bottom: 3%;
+}
+
+#consult_patient{
+	background-color: #87CEEB;
+	padding: 0.8%;
+	width: 50%;
+}
+
+.patient{
+	padding: 1%;
+	width: 70%;
+	background-color: white;
+	box-shadow: 4px 5px gray;
+}
+
+.patient input{
+	width: 70%;
+	height: 20px;
+}
+
+
+#search1{
+	border: none;
+	background-color: #3CB371;
+	color: white;
+	width: 20%;
+	height: 40px;
+	margin-left: 40%;
+}
+
+#search1:hover{
+	box-shadow: 2px 4px gray;
+	transition: 0.3s;
+}
+
+#search2{
+	border: none;
+	background-color: #3CB371;
+	color: white;
+	width: 20%;
+	height: 40px;
+	margin-left: 40%;
+}
+
+#search2:hover{
+	box-shadow: 2px 4px gray;
+	transition: 0.3s;
+}
+
+#search3{
+	border: none;
+	background-color: #3CB371;
+	color: white;
+	width: 20%;
+	height: 40px;
+	margin-left: 40%;
+}
+
+#search3:hover{
+	box-shadow: 2px 4px gray;
+	transition: 0.3s;
+}
+
+.modal{
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+}
+
+.modal_content{
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#register_patient{
+	background-color: ;
+}
+
+#register_patient h3, h4{
+	text-align: center; 
+}
+
+#social{
+	margin-left: 30%;
+	margin-top: -5%;
+}
+
+#social-nome{
+	margin-left: 20%;
+	margin-top: -5.5%;
+}
+
+
