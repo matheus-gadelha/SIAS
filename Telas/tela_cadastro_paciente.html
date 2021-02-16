@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<title>Cadastro Paciente</title>
 	<link rel="stylesheet" type="text/css" href="estilo/estilo_tela_cadastro_funcionario.css">
 	<script type="text/javascript" src="jquery-3.5.1.js"></script>
-	
+
 	<script type="text/javascript">
 			$(document).ready(function(){
 				$(".radio").on("click", function(){
@@ -32,7 +32,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			var modal = document.getElementById("back_modal");	
+			var modal = document.getElementById("back_modal");
 
 			var btn1 = document.getElementById("search1");
 			var btn2 = document.getElementById("search2");
@@ -143,27 +143,30 @@
 				<h4>Realize o cadastro do mesmo</h4>
 
 				<form action="" method="POST">
-					<label>CNS(Cadastro Nacional de Saúde)</label><br/>
-					<input type="text" name="cns"><br/>
+					<fieldset>
+						<legend>Dados Pessoais</legend
+							<label>CNS(Cadastro Nacional de Saúde)</label><br/>
+							<input type="text" name="cns"><br/>
 
-					<br/>
+							<br/>
 
-					<label>Paciente</label><br/>
-					<input type="text" name="regs_name_patient" required><br/>
+							<label>Paciente</label><br/>
+							<input type="text" name="regs_name_patient" required><br/>
 
-					<br/>
+							<br/>
 
-					<div id="social">
-						<label>Nome Social?</label><br/>
-						<input type="radio" id="sim_nsocial" name="n_social" value="sim">Sim
-						<input type="radio" id="nao_nsocial" name="n_social" value="nao">Não
+							<div id="social">
+								<label>Nome Social?</label><br/>
+								<input type="radio" id="sim_nsocial" name="n_social" value="sim">Sim
+								<input type="radio" id="nao_nsocial" name="n_social" value="nao">Não
 
-						<div id="social-nome">
-							<label>Nome Social:</label><br/>
-							<input type="text" name="name_social" disabled>
-						</div>
-						
-					</div>
+								<div id="social-nome">
+									<label>Nome Social:</label><br/>
+									<input type="text" name="name_social" disabled>
+								</div>
+
+							</div>
+					</fieldset
 
 					<br/>
 
