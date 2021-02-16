@@ -85,8 +85,12 @@ body{
 }
 
 #forgetpassword{
-  margin-left: 2%;
+  margin-left: 4%;
   margin-top: 5%;
+}
+
+#forgetpassword a{
+  font-size: 20px;
 }
 
 #botao:hover{
