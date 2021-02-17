@@ -65,6 +65,22 @@
 
 	</script>
 
+	<script type="text/javascript">
+			$(document).ready(function(){
+				var r1 = document.getElementById('sim_nsocial');
+				var r2 = document.getElementById('nao_nsocial');
+
+				r1.onclick = function(){
+					document.getElementById('field_name').disabled = false;
+				}
+
+				r2.onclick = function(){
+					document.getElementById('field_name').disabled = true;
+				}
+			});
+
+	</script>
+
 </head>
 	<body>
 
@@ -143,6 +159,8 @@
 				<h4>Realize o cadastro do mesmo</h4>
 
 				<form action="" method="POST">
+					<fieldset>
+						<legend>Dados Pessoais</legend>
 
 							<label>CNS(Cadastro Nacional de Saúde)</label><br/>
 							<input type="text" name="cns"><br/>
@@ -156,23 +174,256 @@
 
 							<div id="social">
 								<label>Nome Social?</label><br/>
-								<input type="radio" id="sim_nsocial" name="n_social" value="sim">Sim
-								<input type="radio" id="nao_nsocial" name="n_social" value="nao">Não
+								<input type="radio" onClick="eneble()" id="sim_nsocial" name="n_social" value="sim">Sim
+								<input type="radio" onClick="disabled()" id="nao_nsocial" name="n_social" value="nao">Não
 
 								<div id="social-nome">
 									<label>Nome Social:</label><br/>
-									<input type="text" name="name_social" disabled>
+									<input type="text" id="field_name" name="name_social" disabled>
 								</div>
 
 							</div>
 
+							<br/>
+
+							<label>Data de Nascimento:</label><br/>
+							<input type="date" name="dt_nascimento">
+
+							<br/>
+
+							<div id="sexo">
+								<label>Sexo</label><br/>
+								<select>
+									<option value="m">Masculino</option>
+									<option value="f">Feminino</option>
+									<option value="nd">Prefiro não infomrar</option>
+								</select>
+							</div>
+
+							<div id="cor">
+								<label>Cor</label><br/>
+								<select>
+									<option value="branco">Branco</option>
+									<option value="preto">Preto</option>
+									<option value="pardo">Pardo</option>
+								</select>
+							</div>
+
+							<div id="apelido">
+								<label>Apelido</label><br/>
+								<input type="text" name="apelido">
+							</div>
+
+							<br/>
+
+							<div id="filiacao">
+								<label>Filiação</label><br/>
+								<input type="text" name="name_mother" placeholder="Mãe *" required>
+								<input type="text" name="name_father" placeholder="Pai">
+							</div>
+
+							<br/>
+
+							<label>Nacionalidade</label><br/>
+							<select>
+								<option>Brasileiro</option>
+								<option>Estrangeiro</option>
+								<option>Naturalizado</option>
+							</select>
+
+							<div id="uf">
+								<label>UF</label><br/>
+								<select name="">
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AP">Amapá</option>
+									<option value="AM">Amazonas</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espírito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PR">Paraná</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SP">São Paulo</option>
+									<option value="SE">Sergipe</option>
+									<option value="TO">Tocantins</option>
+								</select>
+							</div>
+
+							<div id="natual">
+								<label>Naturalidade</label><br/>
+								<select name="">
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AP">Amapá</option>
+									<option value="AM">Amazonas</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espírito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PR">Paraná</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SP">São Paulo</option>
+									<option value="SE">Sergipe</option>
+									<option value="TO">Tocantins</option>
+								</select>
+							</div>
+
+					</fieldset>	
+
+					<fieldset>
+						<legend>Documentos</legend>
+
+						<label>CPF</label><br/>
+						<input type="text" name=""><br/>
+
+						<br/>
+
+						<label>RG</label><br/>
+						<input type="text" name="" placeholder="Número">
+
+						<div id="emissor">
+							<label>Org. Emissor</label><br/>
+							<select>
+								<option>Secretaria de Segurança Pública</option>
+								<option>Polícia Militar</option>
+								<option>Policia Civil</option>
+								<option>Carteira Nacional de Habilitação</option>
+								<option>Carteira de Trabaho e Previdência Social</option>
+								<option>Fundo de Garantia do Tempo de Serviço</option>
+								<option>Instituto Félix Pacheco</option>
+								<option>Instituto Pereira Faustino</option>
+								<option>Instituto Médico-Legal</option>
+								<option>Ministério do Trabalho e Emprego</option>
+								<option>Ministério da Marinha</option>
+								<option>Ministério da Aeronáutica</option>
+								<option>Ministério do Exército</option>
+								<option>Polícia Federal</option>
+								<option>Polícia Militar</option>
+								<option>Carteira de Estrangeiro</option>
+								<option>Secretaria da Justiça e Segurança</option>
+								<option>Secretaria da Justiça do Trabalho e Segurança</option>
+							</select>
+						</div>
+
+						<div id="uf-rg">
+							<label>UF do RG</label><br/>
+							<select name="">
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AP">Amapá</option>
+									<option value="AM">Amazonas</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espírito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PR">Paraná</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SP">São Paulo</option>
+									<option value="SE">Sergipe</option>
+									<option value="TO">Tocantins</option>
+								</select>
+						</div>
+
+						<div id="dt-emissao">
+							<label>Emissão do RG</label><br/>
+							<input type="date" name="">
+						</div>
+
+					</fieldset>
+
+					<fieldset>
+						<legend>Certidão</legend>
+
+						<label>Tipo de Certidão</label><br/>
+						<select>
+							<option>Selecione</option>
+							<option>Nascimento</option>
+							<option>Casamento</option>
+						</select>
+
+						<div id="cartorio">
+							<label>Cartório</label><br/>
+							<input type="text" name="cartorio">
+						</div>
+
+						<br/>
+
+						<label>Matricula</label><br/>
+						<input type="text" name="">
+
+						<div id="livro">
+							<label>Livro</label><br/>
+							<input type="text" style="width: 5%" name="">
+						</div>
+
+						<div id="folha">
+							<label>Folha</label><br/>
+							<input type="text" style="width: 5%" name="">
+						</div>
+
+						<div id="termo">
+							<label>Termo</label><br/>
+							<input type="text" style="width: 5%" name="">
+						</div>
+
+						<div id="dt-certidao">
+							<label>Data de Emissão</label><br/>
+							<input type="date" name="">
+						</div>
+
+					</fieldset>
+
+					<fieldset>
+						<legend>Observações</legend>
+						<textarea rows="10" cols="100" style="resize: none;"></textarea>
+					</fieldset>
+
 					<br/>
 
-
-
-					<br/>
-
-					<input type="submit" name="register" value="Cadastrar">
+					<input type="submit" id="register" name="register" value="Cadastrar">
 				</form>
 
 			</div>
