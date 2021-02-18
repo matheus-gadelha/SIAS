@@ -223,5 +223,6 @@ h3{
 }
 
 .conteudo label, input{
-	padding: 0.2%;
+	padding: auto;
 }
+

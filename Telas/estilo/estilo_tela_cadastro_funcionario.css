@@ -6,6 +6,7 @@ h3{
 }
 
 #cad_func{
+	margin: auto;
 	width: 500px;
 	height: 98%;
 	background-color: #87CEFA;
@@ -39,7 +40,6 @@ h3{
 
 #inf_pessoais label{
 	margin-top: 50%;
-	color: #4682B4;
 	font-family: times;
 
 }
@@ -153,7 +153,7 @@ h3{
 }
 
 label{
-	color: #4682B4;
+	font-weight: bold;
 }
 
 hr{
