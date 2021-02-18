@@ -217,3 +217,7 @@ h3{
 	margin-left: 36%;
 	margin-top: -3.7%;
 }
+
+.conteudo label, input{
+	padding: 0.2%;
+}
