@@ -1,223 +1,162 @@
-#sus_patient{
-	display: none;
-}
-
-#cpf_patient{
-	display: none;
-}
-
-#nome_patient{
-	display: none;
-}
-
 h3{
-	margin-top: 0.5%;
+	position: relative;
+	margin-left: 1%;
+	margin-top: 0.8%;
+	margin-bottom: 5%;
 }
 
-.radio{
-	margin-bottom: 3%;
+#cad_func{
+	width: 500px;
+	height: 98%;
+	background-color: #87CEFA;
+	padding: 0.2%;
 }
 
-#consult_patient{
-	background-color: #87CEEB;
-	padding: 0.8%;
-	width: 50%;
-}
-
-.patient{
-	padding: 1%;
-	width: 70%;
+#inf_pessoais{
+	position: relative;
 	background-color: white;
-	box-shadow: 4px 5px gray;
+	width: 85%;
+	margin-left: 1%;
+	margin-top: -3%;
+	padding: 1%;
+	border: 1px solid;
+	border-radius: 2%;
 }
 
-.patient input{
-	width: 70%;
-	height: 20px;
+#cpf{
+	position: relative;
+	left: 50%;
+	margin-top: -10%;
+}
+#cpf input{
+	width: 45%;
 }
 
-
-#search1{
-	border: none;
-	background-color: #3CB371;
-	color: white;
-	width: 20%;
-	height: 40px;
-	margin-left: 40%;
+#inf_pessoais input{
+	padding: 0.5%;
+	height: 22px;
 }
 
-#search1:hover{
-	box-shadow: 2px 4px gray;
-	transition: 0.3s;
-}
-
-#search2{
-	border: none;
-	background-color: #3CB371;
-	color: white;
-	width: 20%;
-	height: 40px;
-	margin-left: 40%;
-}
-
-#search2:hover{
-	box-shadow: 2px 4px gray;
-	transition: 0.3s;
-}
-
-#search3{
-	border: none;
-	background-color: #3CB371;
-	color: white;
-	width: 20%;
-	height: 40px;
-	margin-left: 40%;
-}
-
-#search3:hover{
-	box-shadow: 2px 4px gray;
-	transition: 0.3s;
-}
-
-.modal{
-	display: none; 
-	position: fixed; 
-	z-index: 1; 
-	padding-top: 100px;
-	left: 0;
-	top: 0;
-	width: 100%; 
-	height: 100%; 
-	overflow: auto; 
-	background-color: rgb(0,0,0); 
-	background-color: rgba(0,0,0,0.4); 
+#inf_pessoais label{
+	margin-top: 50%;
+	color: #4682B4;
+	font-family: times;
 
 }
 
-.modal_content{
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-	height: 85%;
-	margin-top: -5%;
-	overflow: scroll;
-
+#nome input{
+	width: 95%;
 }
 
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+#email input{
+	width: 95%;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#register_patient{
-	background-color: ;
-}
-
-#register_patient h3, h4{
-	text-align: center; 
-}
-
-#social{
-	margin-left: 30%;
-	margin-top: -5%;
-}
-
-#social-nome{
-	margin-left: 20%;
-	margin-top: -5.5%;
-}
-
-#register{
-	margin-left: 40%;
+#conselho{
+	margin-left: 1%;
 	margin-top: 1%;
-	width: 12%;
-	height: 39px;
+}
+
+#end{
+	background-color: white;
+	border: 1px solid;
+	padding: 1%;
+	width: 85%;
+	margin-top: 1%;
+	border-radius: 2%;
+}
+
+#end input{
+	padding: 0.5%;
+	margin-top: 1.5%;
+}
+
+#rua{
+	position: relative;
+	width: 75%;
+}
+
+#num{
+	position: relative;
+	left: 1%;
+	width: 15%;
+}
+
+#cep{
+	width: 30%;
+}
+
+#cargo{
+	background-color: white;
+	border: 1px solid;
+	padding: 1%;
+	width: 85%;
+	border-radius: 2%;
+}
+#funcao{
+	position: relative;
+	margin-left: 40%;
+	margin-top: -9%;
+}
+
+#sub{
+	position: relative;
+	margin-left: 40%;
+	margin-top: -3%;
+	margin-bottom: 3%;
+	color: white;
+	background-color: blue;
+
+	
+}
+
+#res{
+	margin-left: 5%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	color: blue;
+	background-color: white;
+}
+
+#res:hover{
+	background-color: red;
+	color: white;
+	transition: 0.2;
+}
+
+.botao:hover{
+	box-shadow: 3px 5px gray;
+	transition: 0.3s;
+}
+
+.botao{
+	width: 20%;
+	height: 30px;
 	border: none;
-	background-color: green;
 	border-radius: 3%;
 }
 
-#sexo{
-	margin-left: 18%;
-	margin-top: -3.5%;
+#conselho{
+	background-color: white;
+	width: 85%;
+	padding: 1%;
+	border-radius: 2%;
+	border: 1px solid;
 }
 
-#cor{
-	margin-left: 35%;
-	margin-top: -3.5%;
+#tel{
+	background-color: white;
+	width: 85%;
+	padding: 1%;
+	border-radius: 2%;
+	border: 1px solid;
 }
 
-#apelido{
-	margin-left: 45%;
-	margin-top: -3.5%;
+label{
+	color: #4682B4;
 }
 
-#filiacao input{
-	width: 30%;
-	height: 20px;
-}
-
-#uf{
-	margin-left: 15%;
-	margin-top: -3.5%;
-}
-
-#natual{
-	margin-left: 35%;
-	margin-top: -3.5%;
-}
-
-#emissor{
-	margin-left: 22%;
-	margin-top: -3.5%;
-}
-
-#uf-rg{
-	margin-left: 55%;
-	margin-top: -3.5%;
-}
-
-#dt-emissao{
-	margin-left: 75%;
-	margin-top: -3.9%;
-}
-
-#cartorio{
-	margin-left: 20%;
-	margin-top: -3.5%;
-}
-
-#livro{
-	margin-left: 18%;
-	margin-top: -3.7%;
-}
-
-#folha{
-	margin-left: 24%;
-	margin-top: -3.7%;
-}
-
-#termo{
-	margin-left: 30%;
-	margin-top: -3.7%;
-}
-
-#dt-certidao{
-	margin-left: 36%;
-	margin-top: -3.7%;
-}
-
-.conteudo label, input{
-	padding: 0.2%;
+hr{
+	height: 2px;
+	background-color: gray;
 }
