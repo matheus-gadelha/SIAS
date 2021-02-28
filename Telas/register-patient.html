@@ -198,8 +198,8 @@
                   <div class="col-sm">
                     
                     <div class="mb-3">
-                      <label for="register-sus" class="form-label">CMS(Cartão Nacional de Saúde)</label>
-                      <input type="text" class="form-control" id="register-sus">
+                      <label for="register-sus" class="form-label">CNS(Cartão Nacional de Saúde)</label>
+                      <input type="text" class="form-control" id="register-sus" name="cart-sus" placeholder="N° do cartão do SUS">
                     </div>
 
                     <div class="mb-3">
@@ -228,14 +228,14 @@
                         
                         <div class="mb-3">
                           <label for="dt-patient" class="form-label">Data de Nascimento</label>
-                          <input type="date" class="form-control" id="dt-patient">
+                          <input type="date" class="form-control" id="dt-patient" name="dt-patient">
                         </div>
 
                       </div>
                       <div class="col-sm">
 
                         <label class="form-label">Sexo</label>
-                        <select class="form-select">
+                        <select class="form-select" name="sex-patient">
                           <option selected>Selecione:</option>
                           <option value="m">Mascuino</option>
                           <option value="f">Feminino</option>
@@ -252,14 +252,14 @@
                         
                         <div class="mb-3">
                           <label for="surname-patient" class="form-label">Apelido</label>
-                          <input type="text" class="form-control" id="surname-patient">
+                          <input type="text" class="form-control" id="surname-patient" name="surname">
                         </div>
 
                       </div>
 
                       <div class="col-sm">
                         <label class="form-label">Cor</label>
-                        <select class="form-select">
+                        <select class="form-select" name="skin">
                           <option selected>Selecione:</option>
                           <option value="b">Branco</option>
                           <option value="p">Preto</option>
@@ -271,7 +271,7 @@
                     </div>
 
                     <label class="form-label">Nacionalidade</label>
-                        <select class="form-select">
+                        <select class="form-select" name="nationality">
                           <option selected>Selecione:</option>
                           <option value="br">Brasileiro(a)</option>
                           <option value="estr">Estrangeiro(a)</option>
@@ -282,20 +282,20 @@
                       <div class="col-sm">
                         <div class="mb-3">
                           <label for="register-cpf" class="form-label">CPF</label>
-                          <input type="text" class="form-control" id="register-cpf" placeholder="XXX.XXX.XXX-XX" required>
+                          <input type="text" class="form-control" name="cpf-patient" id="register-cpf" placeholder="XXX.XXX.XXX-XX" required>
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <div class="mb-3">
                           <label for="register-rg" class="form-label">RG</label>
-                          <input type="text" class="form-control" id="register-rg" required>
+                          <input type="text" class="form-control" name="rg-patient" id="register-rg" placeholder="N° do RG" required>
                         </div>
                       </div>
                     </div>
 
                     <label class="form-label">Tipo de Certidão</label>
-                        <select class="form-select">
+                        <select class="form-select" name="certificate">
                           <option selected>Selecione:</option>
                           <option value="nas">Nascimento</option>
                           <option value="cas">Casamento</option>
@@ -304,12 +304,12 @@
 
                     <div class="mb-3">
                       <label for="registration" class="form-label">Matrícula</label>
-                      <input type="text" class="form-control" id="registration">
+                      <input type="text" class="form-control" name="registration" id="registration" placeholder="N° da matrícula do cartório">
                     </div>
 
 
                     <label class="form-label">Estado Civil</label>
-                        <select class="form-select">
+                        <select class="form-select" name="status">
                           <option selected>Selecione:</option>
                           <option value="nas">Solteiro(a)</option>
                           <option value="cas">Casado(a)</option>
@@ -324,29 +324,29 @@
 
                     <div class="mb-3">
                       <label for="name-patient" class="form-label">Paciente</label>
-                      <input type="text" class="form-control" id="name-patient">
+                      <input type="text" class="form-control" name="patient" id="name-patient" placeholder="Nome do paciente">
                     </div>
 
 
                     <div class="mb-3">
                       <label for="name-social" class="form-label">Nome Social</label>
-                      <input type="text" class="form-control" id="name-social" disabled>
+                      <input type="text" class="form-control" name="name-social" id="name-social" disabled>
                     </div>
 
                     <div class="mb-3">
                       <label for="nameMother-patient" class="form-label">Filiação | Mãe</label>
-                      <input type="text" class="form-control" id="nameMother-patient" required>
+                      <input type="text" class="form-control" name="nameMother-patient" id="nameMother-patient" required>
                     </div>
 
                     <div class="mb-3">
                       <label for="nameFather-patient" class="form-label">Filiação | Pai </label>
-                      <input type="text" class="form-control" id="nameFather-patient">
+                      <input type="text" class="form-control" name="nameFather-patient" id="nameFather-patient">
                     </div>
 
                     <div class="row">
                       <div class="col-sm">
                         <label class="form-label">UF</label>
-                        <select class="form-select">
+                        <select class="form-select" name="uf">
                           <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -379,7 +379,7 @@
 
                       <div class="col-sm">
                         <label class="form-label">Naturalidade</label>
-                        <select class="form-select">
+                        <select class="form-select" name="naturalness">
                           <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -416,13 +416,13 @@
                       <div class="col-sm">
                         <div class="mb-3">
                           <label for="org-emitter" class="form-label">Org. Emissor</label>
-                          <input type="text" class="form-control" id="org-emitter">
+                          <input type="text" class="form-control" name="org-emitter" id="org-emitter">
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <label class="form-label">UF RG</label>
-                        <select class="form-select">
+                        <select class="form-select" name="uf-rg">
                           <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -456,14 +456,14 @@
                       <div class="col-sm">
                         <div class="mb-3">
                           <label for="dt-emitterRg" class="form-label">Emissão RG</label>
-                          <input type="date" class="form-control" id="dt-emitterRg">
+                          <input type="date" class="form-control" name="dt-emitterRg" id="dt-emitterRg">
                         </div>
                       </div>
                     </div>
 
                     <div class="mb-3">
                       <label for="registry" class="form-label">Cartório</label>
-                      <input type="text" class="form-control" id="registry">
+                      <input type="text" class="form-control" name="registry" id="registry">
                     </div>
 
 
@@ -471,28 +471,28 @@
                       <div class="col-sm">
                         <div class="mb-3">
                           <label for="book" class="form-label">Livro</label>
-                          <input type="text" class="form-control" id="book">
+                          <input type="text" class="form-control" name="book" id="book">
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <div class="mb-3">
                           <label for="sheet" class="form-label">Folha</label>
-                          <input type="text" class="form-control" id="sheetsheet">
+                          <input type="text" class="form-control" name="sheetsheet" id="sheetsheet">
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <div class="mb-3">
                           <label for="shudder" class="form-label">Termo</label>
-                          <input type="text" class="form-control" id="shudder">
+                          <input type="text" class="form-control" name="shudder" id="shudder">
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <div class="mb-3">
                           <label for="dt-registry" class="form-label">Data de emissão</label>
-                          <input type="date" class="form-control" id="dt-registry">
+                          <input type="date" class="form-control" name="dt-registry" id="dt-registry">
                         </div>
                       </div>
                     </div>
@@ -533,15 +533,17 @@
                   </div>
                 </div>
 
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+
             </form>  
           </div>
 
 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Cadastrar</button>
-      </div>
+      
     </div>
   </div>
 </div>
