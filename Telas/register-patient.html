@@ -198,8 +198,8 @@
                   <div class="col-sm">
                     
                     <div class="mb-3">
-                      <label for="register-sus" class="form-label">CNS(Cartão Nacional de Saúde)</label>
-                      <input type="text" class="form-control" id="register-sus" name="cart-sus" placeholder="N° do cartão do SUS">
+                      <label for="register-sus" class="form-label">CNS(Cartão Nacional de Saúde)</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" id="register-sus" name="cart-sus" placeholder="N° do cartão do SUS" required>
                     </div>
 
                     <div class="mb-3">
@@ -227,15 +227,15 @@
                       <div class="col-sm">
                         
                         <div class="mb-3">
-                          <label for="dt-patient" class="form-label">Data de Nascimento</label>
-                          <input type="date" class="form-control" id="dt-patient" name="dt-patient">
+                          <label for="dt-patient" class="form-label">Data de Nascimento</label><label class="mandatory">*</label>
+                          <input type="date" class="form-control" id="dt-patient" name="dt-patient" required>
                         </div>
 
                       </div>
                       <div class="col-sm">
 
-                        <label class="form-label">Sexo</label>
-                        <select class="form-select" name="sex-patient">
+                        <label class="form-label">Sexo</label><label class="mandatory">*</label>
+                        <select class="form-select" name="sex-patient" required>
                           <option selected>Selecione:</option>
                           <option value="m">Mascuino</option>
                           <option value="f">Feminino</option>
@@ -270,8 +270,8 @@
                         
                     </div>
 
-                    <label class="form-label">Nacionalidade</label>
-                        <select class="form-select" name="nationality">
+                    <label class="form-label">Nacionalidade</label><label class="mandatory">*</label>
+                        <select class="form-select" name="nationality" required>
                           <option selected>Selecione:</option>
                           <option value="br">Brasileiro(a)</option>
                           <option value="estr">Estrangeiro(a)</option>
@@ -281,21 +281,21 @@
                     <div class="row">
                       <div class="col-sm">
                         <div class="mb-3">
-                          <label for="register-cpf" class="form-label">CPF</label>
+                          <label for="register-cpf" class="form-label">CPF</label><label class="mandatory">*</label>
                           <input type="text" class="form-control" name="cpf-patient" id="register-cpf" placeholder="XXX.XXX.XXX-XX" required>
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <div class="mb-3">
-                          <label for="register-rg" class="form-label">RG</label>
+                          <label for="register-rg" class="form-label">RG</label><label class="mandatory">*</label>
                           <input type="text" class="form-control" name="rg-patient" id="register-rg" placeholder="N° do RG" required>
                         </div>
                       </div>
                     </div>
 
-                    <label class="form-label">Tipo de Certidão</label>
-                        <select class="form-select" name="certificate">
+                    <label class="form-label">Tipo de Certidão</label><label class="mandatory">*</label>
+                        <select class="form-select" name="certificate" required>
                           <option selected>Selecione:</option>
                           <option value="nas">Nascimento</option>
                           <option value="cas">Casamento</option>
@@ -303,13 +303,13 @@
 
 
                     <div class="mb-3">
-                      <label for="registration" class="form-label">Matrícula</label>
-                      <input type="text" class="form-control" name="registration" id="registration" placeholder="N° da matrícula do cartório">
+                      <label for="registration" class="form-label">Matrícula</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" name="registration" id="registration" placeholder="N° da matrícula do cartório" required>
                     </div>
 
 
-                    <label class="form-label">Estado Civil</label>
-                        <select class="form-select" name="status">
+                    <label class="form-label">Estado Civil</label><label class="mandatory">*</label>
+                        <select class="form-select" name="status" required>
                           <option selected>Selecione:</option>
                           <option value="nas">Solteiro(a)</option>
                           <option value="cas">Casado(a)</option>
@@ -323,8 +323,8 @@
                   <div class="col-sm">
 
                     <div class="mb-3">
-                      <label for="name-patient" class="form-label">Paciente</label>
-                      <input type="text" class="form-control" name="patient" id="name-patient" placeholder="Nome do paciente">
+                      <label for="name-patient" class="form-label">Paciente</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" name="patient" id="name-patient" placeholder="Nome do paciente" required>
                     </div>
 
 
@@ -334,7 +334,7 @@
                     </div>
 
                     <div class="mb-3">
-                      <label for="nameMother-patient" class="form-label">Filiação | Mãe</label>
+                      <label for="nameMother-patient" class="form-label">Filiação | Mãe</label><label class="mandatory">*</label>
                       <input type="text" class="form-control" name="nameMother-patient" id="nameMother-patient" required>
                     </div>
 
@@ -345,8 +345,8 @@
 
                     <div class="row">
                       <div class="col-sm">
-                        <label class="form-label">UF</label>
-                        <select class="form-select" name="uf">
+                        <label class="form-label">UF</label><label class="mandatory">*</label>
+                        <select class="form-select" name="uf" required>
                           <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -378,8 +378,8 @@
                       </div>
 
                       <div class="col-sm">
-                        <label class="form-label">Naturalidade</label>
-                        <select class="form-select" name="naturalness">
+                        <label class="form-label">Naturalidade</label><label class="mandatory">*</label>
+                        <select class="form-select" name="naturalness" required>
                           <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -415,14 +415,14 @@
                     <div class="row">
                       <div class="col-sm">
                         <div class="mb-3">
-                          <label for="org-emitter" class="form-label">Org. Emissor</label>
-                          <input type="text" class="form-control" name="org-emitter" id="org-emitter">
+                          <label for="org-emitter" class="form-label">Org. Emissor</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="org-emitter" id="org-emitter" required>
                         </div>
                       </div>
 
                       <div class="col-sm">
-                        <label class="form-label">UF RG</label>
-                        <select class="form-select" name="uf-rg">
+                        <label class="form-label">UF RG</label><label class="mandatory">*</label>
+                        <select class="form-select" name="uf-rg" required>
                           <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -455,44 +455,44 @@
 
                       <div class="col-sm">
                         <div class="mb-3">
-                          <label for="dt-emitterRg" class="form-label">Emissão RG</label>
-                          <input type="date" class="form-control" name="dt-emitterRg" id="dt-emitterRg">
+                          <label for="dt-emitterRg" class="form-label">Emissão RG</label><label class="mandatory">*</label>
+                          <input type="date" class="form-control" name="dt-emitterRg" id="dt-emitterRg" required>
                         </div>
                       </div>
                     </div>
 
                     <div class="mb-3">
-                      <label for="registry" class="form-label">Cartório</label>
-                      <input type="text" class="form-control" name="registry" id="registry">
+                      <label for="registry" class="form-label">Cartório</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" name="registry" id="registry" required>
                     </div>
 
 
                     <div class="row">
                       <div class="col-sm">
                         <div class="mb-3">
-                          <label for="book" class="form-label">Livro</label>
-                          <input type="text" class="form-control" name="book" id="book">
+                          <label for="book" class="form-label">Livro</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="book" id="book" required>
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <div class="mb-3">
-                          <label for="sheet" class="form-label">Folha</label>
-                          <input type="text" class="form-control" name="sheetsheet" id="sheetsheet">
+                          <label for="sheet" class="form-label">Folha</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="sheetsheet" id="sheetsheet" required>
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <div class="mb-3">
-                          <label for="shudder" class="form-label">Termo</label>
-                          <input type="text" class="form-control" name="shudder" id="shudder">
+                          <label for="shudder" class="form-label">Termo</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="shudder" id="shudder" required>
                         </div>
                       </div>
 
                       <div class="col-sm">
                         <div class="mb-3">
-                          <label for="dt-registry" class="form-label">Data de emissão</label>
-                          <input type="date" class="form-control" name="dt-registry" id="dt-registry">
+                          <label for="dt-registry" class="form-label">Data de emissão</label><label class="mandatory">*</label>
+                          <input type="date" class="form-control" name="dt-registry" id="dt-registry" required>
                         </div>
                       </div>
                     </div>
@@ -534,7 +534,7 @@
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                   <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
 
