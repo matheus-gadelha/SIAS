@@ -14,3 +14,10 @@
 	background-color: #EE7600;
 }
 
+#breadcrumb{
+	--bs-breadcrumb-divider: '>'; 
+	padding: 0.5%; 
+	margin-top: 0.5%;
+	margin-bottom: -1%;
+	margin-left: 1%;
+}
