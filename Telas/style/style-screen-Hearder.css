@@ -1,3 +1,7 @@
+body{
+	background-color: #D3D3D3;
+}
+
 #navbarNav{
 	background-color: #EEC900;
 	height: 80px;
@@ -20,4 +24,10 @@
 	margin-top: 0.5%;
 	margin-bottom: -1%;
 	margin-left: 1%;
+}
+
+#conteudo{
+	width: 95%;
+	display: fixed;
+	background-color: white;
 }
