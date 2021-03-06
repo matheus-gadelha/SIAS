@@ -52,17 +52,8 @@
 
 	</nav>
 
-	<!--Trilha-->
-	<nav class="navbar navbar-expand-lg" id="breadcrumb" aria-label="breadcrumb" style="background-color: #98FB98; margin: auto">
-	  <ol class="breadcrumb" style="margin-bottom: 0.5%">
-	    <li class="breadcrumb-item"><a href="#">Home</a></li>
-	    <li class="breadcrumb-item"><a href="#">Asistência</a></li>
-	    <li class="breadcrumb-item active" aria-current="page">Ambulatório</li>
-	  </ol>
-	</nav>
-
 	<!--Barra de Menus-->
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; margin-top: 0.5%; margin-bottom: 0.5%">
 	  <div class="container-fluid">
 	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
 	      <ul class="navbar-nav" style="margin-left: 8%">
@@ -73,9 +64,7 @@
 	            Consultas
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	            <li><a class="dropdown-item" href="#">Ambulatório</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 1</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 2</a></li>
+	            <li><a class="dropdown-item" href="#">Pacientes Internados</a></li>
 	          </ul>
 	        </li>
 
@@ -84,9 +73,15 @@
 	            Assistência
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	            <li><a class="dropdown-item" href="#">Sub-menu 1</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 2</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 3</a></li>
+	            <li><a class="dropdown-item" href="#">Ambulatório</a></li>
+	            <li><a class="dropdown-item" href="#">Cadastros</a></li>
+	            <li><a class="dropdown-item" href="#">NAC</a></li>
+	            <li><a class="dropdown-item" href="#">Prescrições</a></li>
+	            <li><a class="dropdown-item" href="#">Ouvidoria Registro</a></li>
+	            <li><a class="dropdown-item" href="#">MatrixNET</a></li>
+	            <li><a class="dropdown-item" href="#">Pacientes (PEP)</a></li>
+	            <li><a class="dropdown-item" href="#">Status (PEP)</a></li>
+	            <li><a class="dropdown-item" href="#">Prescrição Padrão</a></li>
 	          </ul>
 	        </li>
 
@@ -94,11 +89,6 @@
 	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 	            Validação de Produto
 	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	            <li><a class="dropdown-item" href="#">Sub-menu 1</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 2</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 3</a></li>
-	          </ul>
 	        </li>
 
 	        <li class="nav-item dropdown">
@@ -106,9 +96,8 @@
 	            Movimentações
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	            <li><a class="dropdown-item" href="#">Sub-menu 1</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 2</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 3</a></li>
+	            <li><a class="dropdown-item" href="#">Movimentação de Leitos</a></li>
+	            <li><a class="dropdown-item" href="#">Movimentação Cirúrgica</a></li>
 	          </ul>
 	        </li>
 
@@ -116,10 +105,33 @@
 	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 	            Relatórios/Consultas
 	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	            <li><a class="dropdown-item" href="#">Sub-menu 1</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 2</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 3</a></li>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="report">
+	            <li><a class="dropdown-item" href="#">Censo Diário Hospitalar</a></li>
+	            <li><a class="dropdown-item" href="#">Boletim</a></li>
+	            <li><a class="dropdown-item" href="#">Pacientes Internados/ <br/> Acompanhantes (Nutrição)</a></li>
+	            <li><a class="dropdown-item" href="#">Relatórios Gerenciais </a></li>
+	            <li><a class="dropdown-item" href="#">Acompanhantes</a></li>
+	            <li><a class="dropdown-item" href="#">Riscos Enfermagem</a></li>
+	            <li><a class="dropdown-item" href="#">Geral Exames - BPA's</a></li>
+	            <li><a class="dropdown-item" href="#">Lista Exames</a></li>
+	            <li><a class="dropdown-item" href="#">Retificação Exames</a></li>
+	            <li><a class="dropdown-item" href="#">Geral Consultas</a></li>
+	            <li><a class="dropdown-item" href="#">Interconsultas</a></li>
+	            <li><a class="dropdown-item" href="#">RT</a></li>
+	            <li><a class="dropdown-item" href="#">Nutrição</a></li>
+	            <li><a class="dropdown-item" href="#">EMTN</a></li>
+	            <li><a class="dropdown-item" href="#">Dependências Cirúrgicas</a></li>
+	            <li><a class="dropdown-item" href="#">Gerenciamento Cirúrgico</a></li>
+	            <li><a class="dropdown-item" href="#">SErviços de Cirurgia</a></li>
+	            <li><a class="dropdown-item" href="#">Totais Exames por Período</a></li>
+	            <li><a class="dropdown-item" href="#">Prescrições de 14:00H às 19:00H</a></li>
+	            <li><a class="dropdown-item" href="#">Hemodiálise</a></li>
+	            <li><a class="dropdown-item" href="#">Avaliação de Prontuário</a></li>
+	            <li><a class="dropdown-item" href="#">Epidemiológico</a></li>
+	            <li><a class="dropdown-item" href="#">Escore de Charlson</a></li>
+	            <li><a class="dropdown-item" href="#">Pacientes Óbito</a></li>
+	            <li><a class="dropdown-item" href="#">Linha de Cuidado</a></li>
+	            <li><a class="dropdown-item" href="#">Mensal de Custos</a></li>
 	          </ul>
 	        </li>
 
@@ -128,9 +140,10 @@
 	            Mapa
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	            <li><a class="dropdown-item" href="#">Sub-menu 1</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 2</a></li>
-	            <li><a class="dropdown-item" href="#">Sub-menu 3</a></li>
+	            <li><a class="dropdown-item" href="#">Laboratório</a></li>
+	            <li><a class="dropdown-item" href="#">Imagem</a></li>
+	            <li><a class="dropdown-item" href="#">Transporte</a></li>
+	            <li><a class="dropdown-item" href="#">Cirúrgico</a></li>
 	          </ul>
 	        </li>
 
@@ -139,7 +152,7 @@
 	            Serviço Social
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	            <li><a class="dropdown-item" href="#">Sub-menu 1</a></li>
+	            <li><a class="dropdown-item" href="#">Grupos de Atendimento</a></li>
 	            <li><a class="dropdown-item" href="#">Sub-menu 2</a></li>
 	            <li><a class="dropdown-item" href="#">Sub-menu 3</a></li>
 	          </ul>
@@ -160,6 +173,28 @@
 	    </div>
 	  </div>
 	</nav>
+
+
+	<!--Trilha-->
+	<nav class="navbar navbar-expand-lg" id="breadcrumb" aria-label="breadcrumb">
+	  <ol class="breadcrumb" style="margin-bottom: 0.5%; margin-left: 1%">
+	    <li class="breadcrumb-item"><a id="link" href="#">Home</a></li>
+	    <li class="breadcrumb-item"><a id="link" href="#">Asistência</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Ambulatório</li>
+	  </ol>
+	</nav>
+	
+
+
+		<!--
+        <div class="btn-group btn-breadcrumb" style="margin: auto;">
+            <a href="#" class="btn btn-default col-md-auto" id="link">Home</a>
+            <a href="#" class="btn btn-default col-md-auto" id="link">Snippets</a>
+            <a href="#" class="btn btn-default col-md-auto" id="link">Breadcrumbs</a>
+            <a href="#" class="btn btn-default col-md-auto" id="link">Default</a>
+        </div>
+		-->
+
 
 	<!-- Função desativada
 	<div id="conteudo" style="margin-left: 2%; margin-top: 1%"></div>
