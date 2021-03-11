@@ -10,6 +10,35 @@
 	<script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="javascript/jquery-3.5.1.js "></script>
 	<script type="text/javascript" src="javascript/JQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+        $(".form-check-input").on("click", function(){
+          if($("#sim").is(":checked")){
+            $("#reason").fadeIn(0);
+
+          }else if($("#nao").is(":checked")){
+            $("#reason").fadeOut(0);
+          }
+        });
+      });
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+        $(".form-check-input").on("click", function(){
+          if($("#marckdown").is(":checked")){
+            $("#patient-markdown").fadeIn(0);
+            $("#patient-justification").fadeOut(0);
+
+          }else if($("#missed").is(":checked")){
+            $("#patient-justification").fadeIn(0);
+            $("#patient-markdown").fadeOut(0);
+          }
+        });
+      });
+	</script>
+
 </head>
 <body>
 
@@ -204,7 +233,7 @@
 				      <td>Médico 01</td>
 				      <td><img src="style/icons/checked.png" width="20" height="20" role="button" data-toggle="tooltip" data-placement="top" title="Paciente chegou">
 				      	  <img src="style/icons/information.png" width="25" height="25" title="Mais Informções" data-bs-toggle="modal" data-bs-target="#info-patient" role="button">
-				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button"> </td>
+				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button" data-bs-toggle="modal" data-bs-target="#miss-patient"> </td>
 				    </tr>
 				    <tr>
 				      <th scope="row">2</th>
@@ -278,40 +307,118 @@
 
 
 	<!--Modal de informações do paciente-->
-	<!-- Modal -->
-<div class="modal fade" id="info-patient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Matheus Gadêlha Lima</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-       
-      	<div class="container">
-		  <div class="row">
-		    <div class="col-sm">
-		      <h5>Médico</h5>
-		      <p>fulano de tal</p>
-		    </div>
-		    <div class="col-sm">
-		      <h5>Consulta</h5>
-		      <p>Data e hora da consulta</p>
-		    </div>
-		    <div class="col-sm">
-		      <h5>Motivo da consulta</h5>
-		      <p>dor de cabeça intensa</p>
-		    </div>
-		  </div>
-		</div>
+	<div class="modal fade" id="info-patient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Matheus Gadêlha Lima - 121564</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	       
+	      	<div class="container">
+			  <div class="row">
+			    <div class="col-sm">
+			      <h5>Médico</h5>
+			      <p>fulano de tal</p>
+			    </div>
+			    <div class="col-sm">
+			      <h5>Especialidade</h5>
+			      <p>Infectologista</p>
+			    </div>
+			    <div class="col-sm">
+			      <h5>Consulta</h5>
+			      <p>Data e hora da consulta</p>
+			    </div>
+			    <div class="col-sm">
+			      <h5>Motivo da consulta</h5>
+			      <p>dor de cabeça intensa</p>
+			    </div>
+			  </div>
+			</div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!--Modal para o caso de falta do paciente-->
+	<div class="modal fade" id="miss-patient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Matheus Gadêlha Lima -121564</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+
+	      	<h6>Qual o motivo da falta?</h6>
+
+	      	<div class="form-check form-check-inline">
+		      <input class="form-check-input" type="radio" name="radio-reason" id="marckdown">
+		      <label class="form-check-label" for="radio-find">
+		        Remarcar a consulta
+		      </label>
+
+		    </div>
+
+		    <div class="form-check form-check-inline">
+		      <input class="form-check-input" type="radio" name="radio-reason" id="missed">
+		      <label class="form-check-label" for="radio-find">
+		        Não compareceu
+		      </label>
+		    </div>
+
+	       
+	      	<div id="patient-markdown" style="display: none; margin-top: 1%">
+	      		<div class="input-group mb-3">
+				  <span class="input-group-text" id="inputGroup-sizing-default">Nova Data:</span>
+				  <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+				</div>
+
+				<div class="input-group mb-3">
+				  <span class="input-group-text" id="inputGroup-sizing-default">Médico:</span>
+				  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+				</div>
+	      	</div>
+
+
+	        <div id="patient-justification" style="display: none; margin-top: 1%">
+		      	<h6>Paciente apresentou justificativa?</h6>
+
+		      	<div class="form-check form-check-inline">
+			      <input class="form-check-input" type="radio" name="radio-justification" id="sim" checked>
+			      <label class="form-check-label" for="radio-find">
+			        Sim
+			      </label>
+
+			    </div>
+
+			    <div class="form-check form-check-inline">
+			      <input class="form-check-input" type="radio" name="radio-justification" id="nao">
+			      <label class="form-check-label" for="radio-find">
+			        Não
+			      </label>
+			    </div>
+
+			    <div class="form-floating" id="reason">
+		            <textarea class="form-control" id="justification" style="height: 150px; width: 100%; resize: none;"></textarea>
+		            <label for="justification">Justificativa</label>
+		        </div>
+
+		    </div>
+
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Salvar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 
 </body>
