@@ -177,93 +177,139 @@
 	<div class="container-fluid">
 
 		<br/>
-	  	
-	  	<!--Pacientes esperadno serem atendidos-->
-		<div class="container-sm">
 
-			<button type="button" class="btn btn-primary">Primary</button>
+	  	<a href="#" role="button" class="btn btn-primary btn-lg"><img src="style/icons/more.png" style="width: 2rem"> Nova Consulta</a>
 
-			<h2>Recepção</h2>
-			<table class="table">
-			  <thead>
-			    <tr>
-			      <th scope="col">ID</th>
-			      <th scope="col">N° de Protuário</th>
-			      <th scope="col">Nome</th>
-			      <th scope="col">Médico da Consulta</th>
-			      <th scope="col">Ações</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <th scope="row">1</th>
-			      <td>121564</td>
-			      <td>Matheus Gadêlha Lima</td>
-			      <td>Médico 01</td>
-			      <td><img src="style/icons/checked.png" width="20" height="20" title="Paciente chegou"></td>
-			    </tr>
-			    <tr>
-			      <th scope="row">2</th>
-			      <td>465446</td>
-			      <td>José Eldon Alves Belo</td>
-			      <td>Médico 02</td>
-			      <td><img src="style/icons/checked.png" width="20" height="20" title="Paciente chegou"></td>
+	  	<div class="row">
+		    <div class="col-sm">
+		      
+		    	<h2>Recepção</h2>
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th scope="col">ID</th>
+				      <th scope="col">Protuário</th>
+				      <th scope="col">Nome</th>
+				      <th scope="col">Médico da Consulta</th>
+				      <th scope="col">Ações</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>121564</td>
+				      <td>Matheus Gadêlha Lima</td>
+				      <td>Médico 01</td>
+				      <td><img src="style/icons/checked.png" width="20" height="20" title="Paciente chegou" role="button">
+				      	  <img src="style/icons/information.png" width="25" height="25" title="Mais Informções" data-bs-toggle="modal" data-bs-target="#info-patient" role="button">
+				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button"> </td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>465446</td>
+				      <td>José Eldon Alves Belo</td>
+				      <td>Médico 02</td>
+				      <td><img src="style/icons/checked.png" width="20" height="20" title="Paciente chegou" role="button">
+				      	  <img src="style/icons/information.png" width="25" height="25" title="Mais Informções" data-bs-toggle="modal" data-bs-target="#info-patient" role="button">
+				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button"> </td>
 
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>441216</td>
-			      <td>José Bruno Maia</td>
-			      <td>Médico 03</td>
-			      <td><img src="style/icons/checked.png" width="20" height="20" title="Paciente chegou"></td>
-			    </tr>
-			  </tbody>
-			</table>
-		</div>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>441216</td>
+				      <td>José Bruno Maia</td>
+				      <td>Médico 03</td>
+				      <td><img src="style/icons/checked.png" width="20" height="20" title="Paciente chegou" role="button">
+				      	  <img src="style/icons/information.png" width="25" height="25" title="Mais Informções" data-bs-toggle="modal" data-bs-target="#info-patient" role="button">
+				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button"> </td>
+				    </tr>
+				  </tbody>
+				</table>
 
-		<br/>
+		    </div>
 
-		<!--Pacientes esperando para entrar no consultório-->
-		<div class="container-sm">
-			<h2>Ambulatório</h2>
-			<table class="table">
-			  <thead>
-			    <tr>
-			      <th scope="col">ID</th>
-			      <th scope="col">N° de Protuário</th>
-			      <th scope="col">Nome</th>
-			      <th scope="col">Médico da Consulta</th>
-			      <th scope="col">Ações</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <th scope="row">1</th>
-			      <td>121564</td>
-			      <td>Matheus Gadêlha Lima</td>
-			      <td>Médico 01</td>
-			      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
-			    </tr>
-			    <tr>
-			      <th scope="row">2</th>
-			      <td>465446</td>
-			      <td>José Eldon Alves Belo</td>
-			      <td>Médico 02</td>
-			      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
 
-			    </tr>
-			    <tr>
-			      <th scope="row">3</th>
-			      <td>441216</td>
-			      <td>José Bruno Maia</td>
-			      <td>Médico 03</td>
-			      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
-			    </tr>
-			  </tbody>
-			</table>
-		</div>
+
+		    <div class="col-sm">
+		     
+		    	<h2>Ambulatório</h2>
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th scope="col">ID</th>
+				      <th scope="col">N° de Protuário</th>
+				      <th scope="col">Nome</th>
+				      <th scope="col">Médico da Consulta</th>
+				      <th scope="col">Ações</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>121564</td>
+				      <td>Matheus Gadêlha Lima</td>
+				      <td>Médico 01</td>
+				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>465446</td>
+				      <td>José Eldon Alves Belo</td>
+				      <td>Médico 02</td>
+				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
+
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>441216</td>
+				      <td>José Bruno Maia</td>
+				      <td>Médico 03</td>
+				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
+				    </tr>
+				  </tbody>
+				</table>
+
+		    </div>
+		 </div>
 
 	</div>
+
+
+	<!--Modal de informações do paciente-->
+	<!-- Modal -->
+<div class="modal fade" id="info-patient" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Matheus Gadêlha Lima</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+      	<div class="container">
+		  <div class="row">
+		    <div class="col-sm">
+		      <h5>Médico</h5>
+		      <p>fulano de tal</p>
+		    </div>
+		    <div class="col-sm">
+		      <h5>Consulta</h5>
+		      <p>Data e hora da consulta</p>
+		    </div>
+		    <div class="col-sm">
+		      <h5>Motivo da consulta</h5>
+		      <p>dor de cabeça intensa</p>
+		    </div>
+		  </div>
+		</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </body>
