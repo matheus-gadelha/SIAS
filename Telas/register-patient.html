@@ -315,12 +315,18 @@
               </div>
 
               </div>
-              
+
             </div> 
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="style/icons/search.png" style="width: 1.5rem">Pesquisar</button>  <a href="#" role="button" class="btn btn-primary"><img src="style/icons/more.png" style="width: 1.5rem"> Novo Paciente</a>
+            <br/>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#patient-not-found"><img src="style/icons/search.png" style="width: 1.5rem"> Pesquisar</button>  
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#found-patient"><img src="style/icons/more.png" style="width: 1.5rem"> Novo Paciente</button>
 
         </div>
+
+        <br/>
 
       </form>
 
@@ -352,14 +358,32 @@
           </tbody>
         </table>
 
+          <nav>
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
       </div>
 
     </div>
   </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="title-modal" aria-hidden="true">
+<!-- Modal Paciente não Encontrado-->
+<div class="modal fade" id="patient-not-found" tabindex="-1" aria-labelledby="title-modal" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
@@ -369,6 +393,379 @@
 
       <div class="modal-header">
         <h6 class="modal-title" id="caption-modal">Realize o cadastro:</h6> 
+      </div>
+
+      <div class="modal-body">
+        
+
+          <!--Cadastro de Paciente-->
+          <div class="container">
+            <form>
+                <div class="row">
+
+                  <!--Coluna da esquerda-->
+                  <div class="col-sm">
+                    
+                    <div class="mb-3">
+                      <label for="register-sus" class="form-label">CNS(Cartão Nacional de Saúde)</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" id="register-sus" name="cart-sus" placeholder="N° do cartão do SUS" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Nome social?</label>
+                      <br>
+                        <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radio-Nsocial" id="radio-Y-Nsocial">
+                        <label class="form-check-label" for="radio-Nsocial">
+                          Sim
+                        </label>
+
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radio-Nsocial" id="radio-N-Nsocial">
+                        <label class="form-check-label" for="radio-Nsocial">
+                          Não
+                        </label>
+                      </div>
+                    </div>
+
+
+                    <!--Linha sexo e data de nascimento-->
+                    <div class="row">
+                      <div class="col-sm">
+                        
+                        <div class="mb-3">
+                          <label for="dt-patient" class="form-label">Data de Nascimento</label><label class="mandatory">*</label>
+                          <input type="date" class="form-control" id="dt-patient" name="dt-patient" required>
+                        </div>
+
+                      </div>
+                      <div class="col-sm">
+
+                        <label class="form-label">Sexo</label><label class="mandatory">*</label>
+                        <select class="form-select" name="sex-patient" required>
+                          <option selected>Selecione:</option>
+                          <option value="m">Mascuino</option>
+                          <option value="f">Feminino</option>
+                          <option value="nd">Prefiro não informar</option>
+                        </select>
+                      </div>
+                        
+                    </div>
+
+
+                    <!--Linha apelido e cor-->
+                    <div class="row">
+                      <div class="col-sm">
+                        
+                        <div class="mb-3">
+                          <label for="surname-patient" class="form-label">Apelido</label>
+                          <input type="text" class="form-control" id="surname-patient" name="surname">
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm">
+                        <label class="form-label">Cor</label>
+                        <select class="form-select" name="skin">
+                          <option selected>Selecione:</option>
+                          <option value="b">Branco</option>
+                          <option value="p">Preto</option>
+                          <option value="par">Pardo</option>
+                          <option value="in">Índio</option>
+                        </select>
+                      </div>
+                        
+                    </div>
+
+                    <label class="form-label">Nacionalidade</label><label class="mandatory">*</label>
+                        <select class="form-select" name="nationality" required>
+                          <option selected>Selecione:</option>
+                          <option value="br">Brasileiro(a)</option>
+                          <option value="estr">Estrangeiro(a)</option>
+                          <option value="nat">Naturalizado(a)</option>
+                        </select>
+
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <label for="register-cpf" class="form-label">CPF</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="cpf-patient" id="register-cpf" placeholder="XXX.XXX.XXX-XX" required>
+                        </div>
+                      </div>
+
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <label for="register-rg" class="form-label">RG</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="rg-patient" id="register-rg" placeholder="N° do RG" required>
+                        </div>
+                      </div>
+                    </div>
+
+                    <label class="form-label">Tipo de Certidão</label><label class="mandatory">*</label>
+                        <select class="form-select" name="certificate" required>
+                          <option selected>Selecione:</option>
+                          <option value="nas">Nascimento</option>
+                          <option value="cas">Casamento</option>
+                        </select>
+
+
+                    <div class="mb-3">
+                      <label for="registration" class="form-label">Matrícula</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" name="registration" id="registration" placeholder="N° da matrícula do cartório" required>
+                    </div>
+
+
+                    <label class="form-label">Estado Civil</label><label class="mandatory">*</label>
+                        <select class="form-select" name="status" required>
+                          <option selected>Selecione:</option>
+                          <option value="nas">Solteiro(a)</option>
+                          <option value="cas">Casado(a)</option>
+                          <option value="cas">Separado(a)</option>
+                          <option value="cas">Viúvo(a)</option>
+                        </select>
+
+                  </div>
+
+                  <!--Coluna da direita-->
+                  <div class="col-sm">
+
+                    <div class="mb-3">
+                      <label for="name-patient" class="form-label">Paciente</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" name="patient" id="name-patient" placeholder="Nome do paciente" required>
+                    </div>
+
+
+                    <div class="mb-3">
+                      <label for="name-social" class="form-label">Nome Social</label>
+                      <input type="text" class="form-control" name="name-social" id="name-social" disabled>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="nameMother-patient" class="form-label">Filiação | Mãe</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" name="nameMother-patient" id="nameMother-patient" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="nameFather-patient" class="form-label">Filiação | Pai </label>
+                      <input type="text" class="form-control" name="nameFather-patient" id="nameFather-patient">
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm">
+                        <label class="form-label">UF</label><label class="mandatory">*</label>
+                        <select class="form-select" name="uf" required>
+                          <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                      </div>
+
+                      <div class="col-sm">
+                        <label class="form-label">Naturalidade</label><label class="mandatory">*</label>
+                        <select class="form-select" name="naturalness" required>
+                          <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <label for="org-emitter" class="form-label">Org. Emissor</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="org-emitter" id="org-emitter" required>
+                        </div>
+                      </div>
+
+                      <div class="col-sm">
+                        <label class="form-label">UF RG</label><label class="mandatory">*</label>
+                        <select class="form-select" name="uf-rg" required>
+                          <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                      </div>
+
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <label for="dt-emitterRg" class="form-label">Emissão RG</label><label class="mandatory">*</label>
+                          <input type="date" class="form-control" name="dt-emitterRg" id="dt-emitterRg" required>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="registry" class="form-label">Cartório</label><label class="mandatory">*</label>
+                      <input type="text" class="form-control" name="registry" id="registry" required>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <label for="book" class="form-label">Livro</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="book" id="book" required>
+                        </div>
+                      </div>
+
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <label for="sheet" class="form-label">Folha</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="sheetsheet" id="sheetsheet" required>
+                        </div>
+                      </div>
+
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <label for="shudder" class="form-label">Termo</label><label class="mandatory">*</label>
+                          <input type="text" class="form-control" name="shudder" id="shudder" required>
+                        </div>
+                      </div>
+
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <label for="dt-registry" class="form-label">Data de emissão</label><label class="mandatory">*</label>
+                          <input type="date" class="form-control" name="dt-registry" id="dt-registry" required>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="row">
+                      <div class="col-sm">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="files">
+                          <label class="form-check-label" for="files">
+                            Apresentou Documento com foto?
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm" id="up-files" style="display: none;">
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Selecione o arquivo</label>
+                          <input class="form-control" type="file" id="formFile" accept="image/*">
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                  </div>
+                </div>
+
+                <br/>
+                <div class="container" style="margin-left: -1%;">
+                  <div class="row">
+                    <div class="col-sm">
+                      <div class="form-floating">
+                        <textarea class="form-control" id="comments" style="height: 150px; width: 102%; resize: none"></textarea>
+                        <label for="comments">Observações</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+
+            </form>  
+          </div>
+
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal Paciente não Encontrado-->
+<div class="modal fade" id="found-patient" tabindex="-1" aria-labelledby="title-modal" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="title-modal">Cadastro de Paciente</h5> 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
