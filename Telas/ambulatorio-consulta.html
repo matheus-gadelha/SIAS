@@ -207,9 +207,9 @@
 
 		<br/>
 
-	  	<a href="#" role="button" class="btn btn-primary btn-lg"><img src="style/icons/more.png" style="width: 2rem"> Nova Consulta</a>
+	  	<a href="#" role="button" class="btn btn-primary"><img src="style/icons/more.png" style="width: 1.5rem"> Nova Consulta</a>
 
-	  	<a href="#" role="button" class="btn btn-primary btn-lg"><img src="style/icons/search.png" style="width: 2rem"> Pesquisar</a>
+	  	<a href="#" role="button" class="btn btn-primary"><img src="style/icons/search.png" style="width: 1.5rem"> Pesquisar</a>
 
 	  	<div class="row">
 		    <div class="col-sm">
@@ -218,41 +218,47 @@
 				<table class="table">
 				  <thead>
 				    <tr>
-				      <th scope="col">Chegada</th>
-				      <th scope="col">N° de Protuário</th>
+				      <th scope="col">Protuário</th>
 				      <th scope="col">Nome</th>
-				      <th scope="col">Médico da Consulta</th>
+				      <th scope="col">Prioridade</th>
+				      <th scope="col">Médico</th>
 				      <th scope="col">Ações</th>
 				    </tr>
 				  </thead>
 				  <tbody>
 				    <tr>
-				      <th scope="row">1°</th>
 				      <td>121564</td>
 				      <td>Matheus Gadêlha Lima</td>
+				      <td>Média</td>
 				      <td>Médico 01</td>
 				      <td><img src="style/icons/checked.png" width="20" height="20" role="button" data-toggle="tooltip" data-placement="top" title="Paciente chegou">
 				      	  <img src="style/icons/information.png" width="25" height="25" title="Mais Informções" data-bs-toggle="modal" data-bs-target="#info-patient" role="button">
-				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button" data-bs-toggle="modal" data-bs-target="#miss-patient"> </td>
+				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button" data-bs-toggle="modal" data-bs-target="#miss-patient"> 
+				      	  <img src="style/icons/cancel.png" width="20" height="20" title="Cancelar" role="button">
+				      		</td>
 				    </tr>
 				    <tr>
-				      <th scope="row">2°</th>
 				      <td>465446</td>
 				      <td>José Eldon Alves Belo</td>
+				      <td>Alta</td>
 				      <td>Médico 02</td>
 				      <td><img src="style/icons/checked.png" width="20" height="20" title="Paciente chegou" role="button">
 				      	  <img src="style/icons/information.png" width="25" height="25" title="Mais Informções" data-bs-toggle="modal" data-bs-target="#info-patient" role="button">
-				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button"> </td>
+				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button">
+				      	  <img src="style/icons/cancel.png" width="20" height="20" title="Cancelar" role="button">
+				      	   </td>
 
 				    </tr>
 				    <tr>
-				      <th scope="row">3°</th>
 				      <td>441216</td>
 				      <td>José Bruno Maia</td>
+				      <td>Baixa</td>
 				      <td>Médico 03</td>
 				      <td><img src="style/icons/checked.png" width="20" height="20" title="Paciente chegou" role="button">
 				      	  <img src="style/icons/information.png" width="25" height="25" title="Mais Informções" data-bs-toggle="modal" data-bs-target="#info-patient" role="button">
-				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button"> </td>
+				      	  <img src="style/icons/danger.png" width="20" height="20" title="Paciente faltou" role="button">
+				      	  <img src="style/icons/cancel.png" width="20" height="20" title="Cancelar" role="button"> 
+				      		</td>
 				    </tr>
 				  </tbody>
 				</table>
@@ -268,9 +274,9 @@
 				  <thead>
 				    <tr>
 				      <th scope="col">Chagada</th>
-				      <th scope="col">N° de Protuário</th>
+				      <th scope="col">Protuário</th>
 				      <th scope="col">Nome</th>
-				      <th scope="col">Médico da Consulta</th>
+				      <th scope="col">Médico</th>
 				      <th scope="col">Ações</th>
 				    </tr>
 				  </thead>
@@ -280,14 +286,18 @@
 				      <td>121564</td>
 				      <td>Matheus Gadêlha Lima</td>
 				      <td>Médico 01</td>
-				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
+				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório" role="button">
+				      	  <img src="style/icons/cancel.png" width="20" height="20" title="Cancelar" role="button">
+				      	</td>
 				    </tr>
 				    <tr>
 				      <th scope="row">2°</th>
 				      <td>465446</td>
 				      <td>José Eldon Alves Belo</td>
 				      <td>Médico 02</td>
-				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
+				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório" role="button">
+				      	  <img src="style/icons/cancel.png" width="20" height="20" title="Cancelar" role="button">
+				      	</td>
 
 				    </tr>
 				    <tr>
@@ -295,7 +305,9 @@
 				      <td>441216</td>
 				      <td>José Bruno Maia</td>
 				      <td>Médico 03</td>
-				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório"></td>
+				      <td><img src="style/icons/entrar.png" width="20" height="20" title="Entrar no consultório" role="button">
+				      	  <img src="style/icons/cancel.png" width="20" height="20" title="Cancelar" role="button">
+				      	</td>
 				    </tr>
 				  </tbody>
 				</table>
@@ -357,36 +369,14 @@
 
 	      	<h6>Qual o motivo da falta?</h6>
 
-	      	<div class="form-check form-check-inline">
-		      <input class="form-check-input" type="radio" name="radio-reason" id="marckdown">
-		      <label class="form-check-label" for="radio-find">
-		        Remarcar a consulta
-		      </label>
-
-		    </div>
-
 		    <div class="form-check form-check-inline">
-		      <input class="form-check-input" type="radio" name="radio-reason" id="missed">
+		      <input class="form-check-input" type="radio" name="radio-reason" checked id="missed">
 		      <label class="form-check-label" for="radio-find">
 		        Não compareceu
 		      </label>
 		    </div>
 
-	       
-	      	<div id="patient-markdown" style="display: none; margin-top: 1%">
-	      		<div class="input-group mb-3">
-				  <span class="input-group-text" id="inputGroup-sizing-default">Nova Data:</span>
-				  <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-				</div>
-
-				<div class="input-group mb-3">
-				  <span class="input-group-text" id="inputGroup-sizing-default">Médico:</span>
-				  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-				</div>
-	      	</div>
-
-
-	        <div id="patient-justification" style="display: none; margin-top: 1%">
+	        <div id="patient-justification" style="margin-top: 1%">
 		      	<h6>Paciente apresentou justificativa?</h6>
 
 		      	<div class="form-check form-check-inline">
