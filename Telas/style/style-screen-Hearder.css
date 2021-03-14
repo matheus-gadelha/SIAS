@@ -1,12 +1,15 @@
 body{
-	background-color: #EEE9E9;
+	background-color: #E8E8E8;
 }
 
-#navbarNav{
-	background-color: #EEC900;
-	height: 80px;
-	border-radius: 8px;
-	padding: 0.2%;
+label{
+  font-size: 0.8rem;
+}
+
+#info-user{
+	background-color: #DCDCDC;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
 
 #content-head{
