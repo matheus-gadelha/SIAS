@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Header edit</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Quicksand', sans-serif;
+      }
+      header{
+        box-sizing: border-box;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        background-color: rgba(240,240,240, 1);
+        padding:10px;
+        background-color: #47A9E6;
+      }
+      header .logo img{
+        height:50px;
+      }
+      header a{
+        text-decoration:none;
+        color:#204B66;
+      }
+      .user-login{
+        display:flex;
+        align-items:center;
+      }
+      header .user-login .info{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        min-height:40px;
+        background-color:#8FC7EA;
+        box-sizing: border-box;
+        padding:4px;
+        border-radius:4px
+      }
+      header .user-login .info a{
+        border-bottom:1px solid #204B66;
+      }
+      header .user-login .info .data-conectado{
+        color: rgba(120,120,120,1);
+        font-size:12px
+      }
+      header .user-login .info .name{
+        display:flex;
+        align-items:center;
+      }
+      header .user-login .info .name a:nth-child(2){
+        border:0;
+        margin-left:2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="style/icons/logo.png" alt="">
+      </div>
+      <div class="user-login">
+        <img style="margin-right:10px; border: 1px solid black; width:40px; height:40px; border-radius:40px" class="photo" src="style/icons/user.png" alt="">
+        <div class="info">
+          <div class="name">
+            <a href="#">Nome do usuário que está conectado</a><a href="#"><img width="25px" src="style/icons/logout.png" alt=""></a>
+          </div>
+          <div class="data-conectado">
+            Login efetuado em 05/12/2020
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
