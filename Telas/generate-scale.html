@@ -10,11 +10,31 @@
   <script type="text/javascript" src="javascript/jquery-3.5.1.js "></script>
   <script type="text/javascript" src="javascript/JQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
 
+
+  <!--Links para o campo de múltiplas datas-->
+  <script type="text/javascript" src="javascript/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
+  <script type="text/javascript" src="javascript/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="javascript/bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="javascript/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.min.css">
+
   <!--Scripts de máscaras-->
   <script type="text/javascript">
     $(document).ready(function(){
       $("#scale").mask("Das 00:00 até às 00:00 / Das 00:00 até às 00:00"); 
     });
+  </script>
+
+  <script type="text/javascript">
+  	$(document).ready(function(){
+	  	$("#sandbox-container input").datepicker({
+	  		language: "pt-BR",
+		    multidate: true,
+		    keyboardNavigation: false,
+		    multidateSeparator: "--",
+		    forceParse: false,
+		    todayHighlight: true
+		});
+	});
   </script>
 
 </head>
@@ -230,66 +250,44 @@
 	</div>
 
 	<div class="container-fluid">
-		<h3>Escala:</h3>
-
-
+		<h3>Escala</h3>
 		<div class="row">
 		    <div class="col-5">
 		      <h5>Dias:</h5>
-		    	<table class="table">
-		          <thead>
-		            <tr>
-		              <th scope="col">Segunda</th>
-		              <th scope="col">Terça</th>
-		              <th scope="col">Quarta</th>
-		              <th scope="col">Quinta</th>
-		              <th scope="col">Sexta</th>
-		              <th scope="col">Sábado</th>
-		              <th scope="col">Domingo</th>
-		            </tr>
-		          </thead>
-		          <tbody>
-		            <tr>
-		              <th scope="col"><input class="form-check-input" type="checkbox" value="segunda"></th>
-		              <th scope="col"><input class="form-check-input" type="checkbox" value="terca"></th>
-		              <th scope="col"><input class="form-check-input" type="checkbox" value="quarta"></th>
-		              <th scope="col"><input class="form-check-input" type="checkbox" value="quinta"></th>
-		              <th scope="col"><input class="form-check-input" type="checkbox" value="sexta"></th>
-		              <th scope="col"><input class="form-check-input" type="checkbox" value="sabado"></th>
-		              <th scope="col"><input class="form-check-input" type="checkbox" value="domingo"></th>
-		            </tr>
-		            
-		          </tbody>
-		        </table>
+
+		      <div class="span5 col-md-7" id="sandbox-container">
+		      	<input type="text" class="form-control">
+		      </div>
 
 		    </div>
 			    <div class="row aling-items-center">
 				    <div class="col-7">
 				    	<h5>Turno:</h5>
 
-				      	<table class="table">
-				          <thead>
-				            <tr>
-				              <th scope="col">Período</th>
-				              <th scope="col">Horário</th>
-				            </tr>
-				          </thead>
-				          <tbody>
-				            <tr>
-				              <th scope="col">
-				              	<select class="form-select" aria-label="Default select example">
-								  <option selected>Selecione</option>
-								  <option value="1">Manhã e Tarde</option>
-								  <option value="2">Tarde e Noite</option>
-								  <option value="2">Noite e Manhã</option>
-								</select>
-				              </th>
 
-				              <th scope="col"><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale"></th>
-				            </tr>
-				            
-				          </tbody>
-				        </table>
+				    	<table class="table">
+						  <thead>
+						    <tr>
+						      <th scope="col">Período</th>
+						      <th scope="col">Horário</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td>16/03/2021</td>
+						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale"></td>
+						    </tr>
+						    <tr>
+						      <td>19/03/2021</td>
+						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale"></td>
+						    </tr>
+						    <tr>
+						      <td>22/03/2021</td>
+						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale"></td>
+						    </tr>
+						  </tbody>
+						</table>
+
 				    </div>
 				</div>
 
