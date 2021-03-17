@@ -2,42 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Gerar Escala</title>
+  <title>Atendimento Profissional</title>
 
   <link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style/style-screen-Hearder.css">
+  <link rel="stylesheet" type="text/css" href="style/style-screen-ProfessionalService.css">
   <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="javascript/jquery-3.5.1.js "></script>
   <script type="text/javascript" src="javascript/JQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+  
+  <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.js"></script>
+  <script src="bootstrap-5.0.0-beta2-dist/js/popper.min.js"></script>
 
-
-  <!--Links para o campo de múltiplas datas-->
-  <script type="text/javascript" src="javascript/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
-  <script type="text/javascript" src="javascript/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
-  <script type="text/javascript" src="javascript/bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.pt-BR.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="javascript/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.min.css">
-
-  <!--Scripts de máscaras-->
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $("#scale1").mask("Das 00:00 até às 00:00 / Das 00:00 até às 00:00");
-      $("#scale2").mask("Das 00:00 até às 00:00 / Das 00:00 até às 00:00"); 
-      $("#scale3").mask("Das 00:00 até às 00:00 / Das 00:00 até às 00:00");
-    });
-  </script>
-
-  <script type="text/javascript">
-  	$(document).ready(function(){
-	  	$("#sandbox-container input").datepicker({
-	  		language: "pt-BR",
-		    multidate: true,
-		    keyboardNavigation: false,
-		    multidateSeparator: "--",
-		    forceParse: false,
-		    todayHighlight: true
-		});
-	});
-  </script>
 
 </head>
 
@@ -91,7 +68,7 @@
 		  <li class="breadcrumb-item"><a id="link" href="header.html">Home</a></li>
 	      <li class="breadcrumb-item"><a id="link" href="menu-ambulatorio.html">Asistência</a></li>
 	      <li class="breadcrumb-item"><a id="link">Ambulatório</a></li>
-	      <li class="breadcrumb-item active" aria-current="page">Gerar Escala</li>
+	      <li class="breadcrumb-item active" aria-current="page">Atendimento Profissional</li>
 	  </ol>
 	</nav>
 
@@ -208,89 +185,52 @@
 
 	<!--Conteúdo-->
 	<div class="container-fluid">
-		<h3>Pesquisar por:</h3>
-
-		<div class="row">
-		    <div class="col-4">
-		      <input type="text" class="form-control" placeholder="CRM / Nome do Médico">
-		    </div>
-		    
-		    <div class="row aling-items-center">
-		    	<div class="col-7">
-				 <table class="table table table-hover">
-			          <thead>
-			            <tr>
-			              <th scope="col">Conselho</th>
-			              <th scope="col">Nome</th>
-			              <th scope="col">Especialidade</th>
-			              <th scope="col">Selecionar</th>
-			            </tr>
-			          </thead>
-			          <tbody>
-			            <tr>
-			              <td>121564</td>
-			              <td>Médico 1</td>
-			              <td>Infectologista</td>
-			              <td><img src="style/icons/checked.png" width="20" height="20" title="Selecionar" role="button"></td>
-			            </tr>
-			            
-			          </tbody>
-		          </table>
-		    		
-		    	</div>
-		    </div>
-
-		</div>
 		
-	</div>
 
-	<div class="container-fluid">
-		<h3>Escala</h3>
 		<div class="row">
-		    <div class="col-5">
-		      <h5>Dias:</h5>
+		    <div class="col-md-auto">
+		     
+		    	<h5>Fila de Espera:</h5>
 
-		      <div class="span5 col-md-7" id="sandbox-container">
-		      	<input type="text" class="form-control"> 
-		      </div>
-
-		    </div>
-			    <div class="row aling-items-center">
-				    <div class="col-7">
-				    	<h5>Turno:</h5>
-
-
-				    	<table class="table">
-						  <thead>
-						    <tr>
-						      <th scope="col">Dia</th>
-						      <th scope="col">Horário</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <td>16/03/2021</td>
-						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale1"></td>
-						    </tr>
-						    <tr>
-						      <td>19/03/2021</td>
-						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale2"></td>
-						    </tr>
-						    <tr>
-						      <td>22/03/2021</td>
-						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale3"></td>
-						    </tr>
-						  </tbody>
-						</table>
-
+				<div class="row">
+				    <div class="col">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
 				    </div>
 				</div>
 
+				<div class="row">
+				    <div class="col">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				    </div>
+				</div>
+
+				<div class="row">
+				    <div class="col">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				    </div>
+			 	</div>
+
+			 	<div class="row">
+				    <div class="col">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				    </div>
+			 	</div>
+
+			 	<div class="row">
+				    <div class="col">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				    </div>
+			 	</div>
+
+		    </div>
+		    <div class="col-9">
+
+		      <h5>Consultório 01 - Médico 01</h5>
+
+
+		    </div>
 		  </div>
-
-	<a href="#" role="button" class="btn btn-lg btn-light"><img src="style/icons/save.png" style="width: 1.8rem"> Salvar</a>
-
-		
+		  		
 	</div>
 
 </body>

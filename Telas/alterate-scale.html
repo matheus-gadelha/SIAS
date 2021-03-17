@@ -35,9 +35,48 @@
 		$(document).ready(function(){
         $("#alterate").on("click", function(){
           $("#alter-scale").fadeToggle(0);
+          $("#scale-change").fadeOut(0);
         });
+
+        $("#replacement").on("click", function(){
+          $("#scale-change").fadeToggle(0);
+          $("#alter-scale").fadeOut(0);
+        });
+
       });
 	</script>
+
+	 <!--Scripts de máscaras-->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#scale1").mask("Das 00:00 até às 00:00 / Das 00:00 até às 00:00"); 
+      $("#scale2").mask("Das 00:00 até às 00:00 / Das 00:00 até às 00:00"); 
+      $("#scale3").mask("Das 00:00 até às 00:00 / Das 00:00 até às 00:00"); 
+    });
+  </script>
+
+
+  <!--Script para habilitar/desabilitar campos dos horários-->
+  <script type="text/javascript">
+      $(document).ready(function(){
+        var btn1 = document.getElementById('edit1');
+        var btn2 = document.getElementById('edit2');
+        var btn3 = document.getElementById('edit3');
+
+        btn1.onclick = function(){
+          document.getElementById('scale1').disabled = false;
+        }
+
+        btn2.onclick = function(){
+          document.getElementById('scale2').disabled = false;
+        }
+
+        btn3.onclick = function(){
+          document.getElementById('scale3').disabled = false;
+        }
+      });
+
+  </script>
 
 
 </head>
@@ -250,7 +289,7 @@
 	<a id="replacement" role="button" class="btn btn-light"><img src="style/icons/replacement.png" style="width: 1.5rem"> Trocar Escala</a>
 
 	<div class="container-fluid" id="alter-scale" style="display: none; margin-top: 1rem">
-		<div class="col-8">
+		<div class="col-7">
 
 			<h6>Adicionar mais Dias:</h6>
 
@@ -270,26 +309,26 @@
 			    <tr>
 			      <td> 
 			      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
-			      	<img src="style/icons/edit.png" role="button" style="width: 1.2rem" title="Editar">
+			      	<img src="style/icons/edit.png" id="edit1" role="button" style="width: 1.2rem" title="Editar">
 			      </td>
 			      <td>16/03/2021</td>
-			      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale"></td>
+			      <td><input type="text" value="Das 08:00 até às 11:00 / Das 13:00 até às 16:00" class="form-control" id="scale1" disabled></td>
 			    </tr>
 			    <tr>
 			      <td> 
 			      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
-			      	<img src="style/icons/edit.png" role="button" style="width: 1.2rem" title="Editar">
+			      	<img src="style/icons/edit.png" id="edit2" role="button" style="width: 1.2rem" title="Editar">
 			      </td>
 			      <td>19/03/2021</td>
-			      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale"></td>
+			      <td><input type="text" value="Das 18:00 até às 00:00 / Das 00:00 até às 07:00" class="form-control" id="scale2" disabled></td>
 			    </tr>
 			    <tr>
 			      <td> 
 			      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
-			      	<img src="style/icons/edit.png" role="button" style="width: 1.2rem" title="Editar">
+			      	<img src="style/icons/edit.png" id="edit3" role="button" style="width: 1.2rem" title="Editar">
 			      </td>
 			      <td>22/03/2021</td>
-			      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale"></td>
+			      <td><input type="text" value="Das 09:00 até às 11:00 / Das 14:00 até às 17:00" class="form-control" id="scale3" disabled></td>
 			    </tr>
 			  </tbody>
 			</table>
@@ -299,8 +338,16 @@
 	</div>
 
 
-	<div class="container-fluid" id="scale-change">
+	<div class="container-fluid" id="scale-change" style="display: none; margin-top: 1rem">
+		<div class="col-7">
+
+			<h6>Trocar de escala com:</h6>
+			<div class="col-5">
+		      <input type="text" class="form-control" placeholder="CRM / Nome do Médico">
+		    </div>
+
 		
+		</div>
 	</div>
 
 </body>
