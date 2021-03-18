@@ -22,9 +22,11 @@
 	  	$("#sandbox-container input").datepicker({
 	  		language: "pt-BR",
 		    multidate: true,
+		    clearBtn: true,
 		    keyboardNavigation: false,
 		    multidateSeparator: "--",
 		    forceParse: false,
+		    orientation: "bottom auto",
 		    todayHighlight: true
 		});
 	});
@@ -65,14 +67,20 @@
 
         btn1.onclick = function(){
           document.getElementById('scale1').disabled = false;
+          document.getElementById('scale2').disabled = false;
+          document.getElementById('scale3').disabled = false;
         }
 
         btn2.onclick = function(){
-          document.getElementById('scale2').disabled = false;
+          document.getElementById('scale4').disabled = false;
+          document.getElementById('scale5').disabled = false;
+          document.getElementById('scale6').disabled = false;
         }
 
         btn3.onclick = function(){
-          document.getElementById('scale3').disabled = false;
+          document.getElementById('scale7').disabled = false;
+          document.getElementById('scale8').disabled = false;
+          document.getElementById('scale9').disabled = false;
         }
       });
 
@@ -289,50 +297,93 @@
 	<a id="replacement" role="button" class="btn btn-light"><img src="style/icons/replacement.png" style="width: 1.5rem"> Trocar Escala</a>
 
 	<div class="container-fluid" id="alter-scale" style="display: none; margin-top: 1rem">
-		<div class="col-7">
 
-			<h6>Adicionar mais Dias:</h6>
+		<div class="row">
+		    <div class="col-3">
+		      <h6>Adicionar mais Dias:</h6>
 
-		      <div class="span5 col-md-5" id="sandbox-container">
+		      <div class="span5 col-12" id="sandbox-container">
 		      	<input type="text" class="form-control">
 		      </div>
 
-			<table class="table">
-			  <thead>
-			    <tr>
-			      <th scope="col">Ações</th>
-			      <th scope="col">Dia</th>
-			      <th scope="col">Horário</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <td> 
-			      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
-			      	<img src="style/icons/edit.png" id="edit1" role="button" style="width: 1.2rem" title="Editar">
-			      </td>
-			      <td>16/03/2021</td>
-			      <td><input type="text" value="Das 08:00 até às 11:00 / Das 13:00 até às 16:00" class="form-control" id="scale1" disabled></td>
-			    </tr>
-			    <tr>
-			      <td> 
-			      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
-			      	<img src="style/icons/edit.png" id="edit2" role="button" style="width: 1.2rem" title="Editar">
-			      </td>
-			      <td>19/03/2021</td>
-			      <td><input type="text" value="Das 18:00 até às 00:00 / Das 00:00 até às 07:00" class="form-control" id="scale2" disabled></td>
-			    </tr>
-			    <tr>
-			      <td> 
-			      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
-			      	<img src="style/icons/edit.png" id="edit3" role="button" style="width: 1.2rem" title="Editar">
-			      </td>
-			      <td>22/03/2021</td>
-			      <td><input type="text" value="Das 09:00 até às 11:00 / Das 14:00 até às 17:00" class="form-control" id="scale3" disabled></td>
-			    </tr>
-			  </tbody>
-			</table>
-		</div>
+		    </div>
+			    
+			    <div class="col-5">
+			    	<h5>Turno:</h5>
+
+
+			    	<table class="table">
+					  <thead>
+					    <tr>
+					      <th scope="col">Ações</th>
+					      <th scope="col">Dia</th>
+					      <th scope="col">Manhã</th>
+					      <th scope="col">Tarde</th>
+					      <th scope="col">Noite</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td> 
+					      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
+					      	<img src="style/icons/edit.png" id="edit1" role="button" style="width: 1.2rem" title="Editar">
+					      </td>
+					      <td>16/03/2021</td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale1"  disabled checked>
+					      </td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale2" disabled checked>
+					      </td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale3" disabled>
+					      </td>
+					    </tr>
+
+					    <tr>
+					      <td> 
+					      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
+					      	<img src="style/icons/edit.png" id="edit2" role="button" style="width: 1.2rem" title="Editar">
+					      </td>
+					      <td>19/03/2021</td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale4" disabled>
+					      </td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale5" disabled checked>
+					      </td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale6" disabled>
+					      </td>
+					    </tr>
+
+					    <tr>
+					      <td> 
+					      	<img src="style/icons/cancel.png" role="button" style="width: 1.2rem" title="Remover">
+					      	<img src="style/icons/edit.png" id="edit3" role="button" style="width: 1.2rem" title="Editar">
+					      </td>
+					      <td>22/03/2021</td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale7" disabled>
+					      </td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale8" disabled>
+					      </td>
+					      <td>
+					      	<input class="form-check-input opt" type="checkbox" id="scale9" disabled checked>
+					      </td>
+					    </tr>
+
+					  </tbody>
+					</table>
+			    </div>
+
+	  </div>
+
+
+
+
+
 
 		<a href="#" role="button" class="btn btn-light"><img src="style/icons/save.png" style="width: 1.8rem"> Salvar</a>
 	</div>

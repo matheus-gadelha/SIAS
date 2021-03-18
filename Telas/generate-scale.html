@@ -31,9 +31,11 @@
 	  	$("#sandbox-container input").datepicker({
 	  		language: "pt-BR",
 		    multidate: true,
+		    clearBtn: true,
 		    keyboardNavigation: false,
 		    multidateSeparator: "--",
 		    forceParse: false,
+		    orientation: "bottom auto",
 		    todayHighlight: true
 		});
 	});
@@ -247,16 +249,16 @@
 	<div class="container-fluid">
 		<h3>Escala</h3>
 		<div class="row">
-		    <div class="col-5">
+		    <div class="col-4">
 		      <h5>Dias:</h5>
 
-		      <div class="span5 col-md-7" id="sandbox-container">
+		      <div class="span5 col-10" id="sandbox-container">
 		      	<input type="text" class="form-control"> 
 		      </div>
 
 		    </div>
-			    <div class="row aling-items-center">
-				    <div class="col-7">
+			    
+				    <div class="col-5">
 				    	<h5>Turno:</h5>
 
 
@@ -264,27 +266,54 @@
 						  <thead>
 						    <tr>
 						      <th scope="col">Dia</th>
-						      <th scope="col">Horário</th>
+						      <th scope="col">Manhã</th>
+						      <th scope="col">Tarde</th>
+						      <th scope="col">Noite</th>
 						    </tr>
 						  </thead>
 						  <tbody>
 						    <tr>
 						      <td>16/03/2021</td>
-						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale1"></td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
 						    </tr>
+
 						    <tr>
 						      <td>19/03/2021</td>
-						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale2"></td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
 						    </tr>
+
 						    <tr>
 						      <td>22/03/2021</td>
-						      <td><input type="text" placeholder="Das 00:00 até às 00:00 / Das 00:00 até às 00:00" class="form-control" id="scale3"></td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
+						      <td>
+						      	<input class="form-check-input opt" type="checkbox" value="" id="flexCheckDefault">
+						      </td>
 						    </tr>
 						  </tbody>
 						</table>
 
 				    </div>
-				</div>
 
 		  </div>
 

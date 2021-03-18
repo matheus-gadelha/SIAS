@@ -5,17 +5,18 @@
   <title>Atendimento Profissional</title>
 
   <link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style/style-screen-Hearder.css">
   <link rel="stylesheet" type="text/css" href="style/style-screen-ProfessionalService.css">
   <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="javascript/jquery-3.5.1.js "></script>
   <script type="text/javascript" src="javascript/JQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
   
+  <!--
   <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.js"></script>
   <script src="bootstrap-5.0.0-beta2-dist/js/popper.min.js"></script>
-
-
+ 	-->
 </head>
 
 <body>
@@ -194,31 +195,31 @@
 
 				<div class="row">
 				    <div class="col">
-				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title=""><span class="badge badge-success align-top" style="background-color: red"> </span>
 				    </div>
 				</div>
 
 				<div class="row">
 				    <div class="col">
-				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title=""><span class="badge badge-success align-top" style="background-color: red"> </span>
 				    </div>
 				</div>
 
 				<div class="row">
 				    <div class="col">
-				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title=""><span class="badge badge-success align-top" style="background-color: yellow"> </span>
 				    </div>
 			 	</div>
 
 			 	<div class="row">
 				    <div class="col">
-				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title=""><span class="badge badge-success align-top" style="background-color: green"> </span>
 				    </div>
 			 	</div>
 
 			 	<div class="row">
 				    <div class="col">
-				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title="">
+				      <img src="style/icons/waiting-patient.png" role="button" style="width: 4rem" title=""><span class="badge badge-success align-top" style="background-color: green"> </span>
 				    </div>
 			 	</div>
 
@@ -227,10 +228,147 @@
 
 		      <h5>Consultório 01 - Médico 01</h5>
 
+		    	<div class="container-fluid">
+		    		<div class="row">
+					    <div class="col" style="padding: 1rem">
+					      <h6>Informações do Paciente</h6>
 
+					      <div class="row">
+					      	<div class="col-md-auto">
+					      		<img src="style/icons/user.png" title="Foto do Paciente(se tiver)" style="width: 4rem">
+					      	</div>
+
+					      	<div class="col-md-auto">
+					      		<div class="form-group">
+					      			<label>[n° do Prontuário]</label>
+					      		</div>
+					      		<div class="form-group">
+					      			<label>Matheus Gadêlha Lima</label>
+					      		</div>
+					      		<div class="form-group">
+					      			<label>06/05/2000</label>
+					      		</div>
+					      		
+					      	</div>
+
+					      	<div class="col-md-auto">
+					      		<div class="form-group">
+					      			<label>(88)9 9999-9999</label>
+					      		</div>
+					      		<div class="form-group">
+					      			<label>(88)9 5555-6666</label>
+					      		</div>
+					      	</div>
+
+					      	<div class="row" style="margin-top: 0.5rem">
+					      		<div class="col-sm">
+					      			<h7>Motivo da Consulta</h7>
+					      			<textarea class="form-control" id="reason" disabled rows="5">
+					      				Paciente se queixa de fortes dores de cabeça, no dia anterior apresentou febre alta e vário enjoos.
+					      			</textarea>
+					      		</div>
+					      	</div>
+
+					      </div>
+
+					    </div>
+
+					    <div class="col" style="padding: 1rem">
+					    	<h6>Hitórico</h6>
+
+					    	<div class="col-5">
+					    		<table class="table">
+								  <tbody>
+								    <tr>
+								      <td>15/12/2020</td>
+								      <td>
+								      	<img src="style/icons/info.png" width="20" height="20" title="Mais Informações"data-bs-toggle="modal" data-bs-target="#historic" role="button"></td>
+								    </tr>
+								    <tr>
+								      <td>02/02/2021</td>
+								      <td>
+								      	<img src="style/icons/info.png" width="20" height="20" title="Mais Informações"data-bs-toggle="modal" data-bs-target="#historic" role="button"></td>
+								    </tr>
+								    <tr>
+								      <td>05/03/2021</td>
+								      <td>
+								      	<img src="style/icons/info.png" width="20" height="20" title="Mais Informações"data-bs-toggle="modal" data-bs-target="#historic" role="button">
+								      </td>
+								    </tr>
+								  </tbody>
+								</table>
+					    	</div>
+					    	
+					    </div>
+
+					</div>
+
+					<div class="row">
+						<div class="col">
+					      <h6>Diagnóstico</h6>
+
+					      <textarea class="form-control" rows="5"></textarea>
+					    </div>
+					    <div class="col">
+					      <h6>Receita</h6>
+
+					      <textarea class="form-control" rows="5"></textarea>
+					    </div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<h6>Retorno</h6>
+						</div>
+					</div>
+		    	</div>
 		    </div>
 		  </div>
 		  		
+	</div>
+
+	<!--Modal histórico de consultas-->
+	<div class="modal fade" id="historic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-xl">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Médico 05 - 15/12/2020</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	       
+	      	<div class="container">
+			  <div class="row">
+			    <div class="col-4">
+			      <h7>Motivo da consulta</h7>
+
+			       <textarea class="form-control" disabled style="resize: none;" rows="6">[motivo pelo qual o paciente foi consultado nesse dia]
+			       </textarea>
+			    </div>
+
+			    <div class="col-4">
+			      <h7>Diagnóstico</h7>
+
+			       <textarea class="form-control" disabled style="resize: none;" rows="6">[qual foi o diagnóstico dado pelo médico]
+			       </textarea>
+			    </div>
+
+			    <div class="col-4">
+			      <h7>Receita</h7>
+
+			       <textarea class="form-control" disabled style="resize: none;" rows="6">[quais foram os medicamentos passados pelo médico]
+			       </textarea>
+			    </div>
+
+			  </div>
+			</div>
+
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 
 </body>
