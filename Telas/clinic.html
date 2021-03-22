@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Menu</title>
+  <title>Clínicas</title>
 
   <link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style/style-screen-Hearder.css">
@@ -10,7 +10,6 @@
   <script type="text/javascript" src="javascript/jquery-3.5.1.js "></script>
   <script type="text/javascript" src="javascript/JQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
 
-  
 
 
 </head>
@@ -60,11 +59,12 @@
 
 
 	<!--Trilha-->
-	<nav class="navbar navbar-expand-lg" id="breadcrumb" aria-label="breadcrumb">
-	  <ol class="breadcrumb" style="margin-bottom: 0.5%; margin-left: 1%">
-	    <li class="breadcrumb-item active" aria-current="page">Home</li>
-	  </ol>
-	</nav>
+  <nav class="navbar navbar-expand-lg" id="breadcrumb" aria-label="breadcrumb">
+    <ol class="breadcrumb" style="margin-bottom: 0.5%; margin-left: 1%">
+      <li class="breadcrumb-item"><a id="link" href="header.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Clínicas</li>
+    </ol>
+  </nav>
 
 	<!--Barra de Menus-->
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd; margin-top: 0.5%; margin-bottom: 0.5%">
@@ -177,68 +177,42 @@
 	  </div>
 	</nav>
 
-		<!--
-        <div class="btn-group btn-breadcrumb" style="margin: auto;">
-            <a href="#" class="btn btn-default col-md-auto" id="link">Home</a>
-            <a href="#" class="btn btn-default col-md-auto" id="link">Snippets</a>
-            <a href="#" class="btn btn-default col-md-auto" id="link">Breadcrumbs</a>
-            <a href="#" class="btn btn-default col-md-auto" id="link">Default</a>
-        </div>
-		-->
+	<!--Conteúdo-->
+	<div class="container-fluid">
+		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#uce" type="button" role="tab" aria-controls="pills-home" aria-selected="true">UCE</button>
+		  </li>
 
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#traumato" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Traumato</button>
+		  </li>
 
-	<!-- Função desativada
-	<div id="conteudo" style="margin-left: 2%; margin-top: 1%"></div>
+		  <li class="nav-item" role="presentation">
+		    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#parto" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Obstetrícia</button>
+		  </li>
 
-	<script type="text/javascript">
-		function carregar(pagina){
-   			$("#conteudo").load(pagina);
-   		}
-	</script>
-	-->
+		</ul>
 
-	<!-- notificação
-		<span class="badge badge-success align-top" style="background-color: blue">0</span>
-	-->
+		<div class="tab-content" id="pills-tabContent">
 
-	<!--Menu Principal-->
-	<div class="container" style="margin-top: 2%;">
+		  <!--Clínica UCE-->
+		  <div class="tab-pane fade show active" id="uce" role="tabpanel" aria-labelledby="pills-home-tab">
+		  	UCE
+		  </div>
 
-		<!--1° linha-->
-	  <div class="row">
-	    <div class="col-sm">
+		  <!--Clínica Traumato-->
+		  <div class="tab-pane fade" id="traumato" role="tabpanel" aria-labelledby="pills-profile-tab">
+		  	traumato
+		  </div>
 
-	      <a class="navbar-brand" href="register-patient.html" style="height: 70px">
-	        <img src="style/icons/new-icons/usuarios.png" style="margin-top: 10%; width: 8rem" class="d-inline-block align-center" title="Pacientes">
-	      </a>
+		  <!--Clínica Obstétrico-->
+		  <div class="tab-pane fade" id="parto" role="tabpanel" aria-labelledby="pills-contact-tab">
+		  	centro de parto
+		  </div>
 
-	    </div>
-	    <div class="col-sm">
-
-	      <a class="navbar-brand" href="ambulatory-menu.html" style="height: 70px">
-		        <img src="style/icons/new-icons/ambulatorio.png" style="margin-top: 10%; width: 7rem" class="d-inline-block align-center" title="Ambulatório">
-		      </a>
-
-	    </div>
-	  
-	    <div class="col-sm">
-	     
-	    <a class="navbar-brand" href="#" style="height: 70px">
-	        <img src="style/icons/new-icons/pacienteInternado.png" style="margin-top: 5%; margin-left: -15%; width: 9rem" class="d-inline-block align-center" title="Internação">
-	      </a>
-
-	    </div>
-	    <div class="col-sm">
-	      
-		    <a class="navbar-brand" href="clinic.html" style="height: 70px">
-		        <img src="style/icons/clinic.png" style="margin-top: 10%;" width="120" height="120" class="d-inline-block align-center" title="Clínicas">
-		      </a>
-
-	    </div>
-	  </div>
-
+		</div>
 	</div>
-
 
 </body>
 </html>
