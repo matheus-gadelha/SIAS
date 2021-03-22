@@ -26,17 +26,6 @@
 	});
   </script>
 
-  <script type="text/javascript">
-  	$(document).ready(function(){
-  		$(".form-check-input").on("click", function(){
-  			if($("#first").is(":checked")){
-            	$("#firts-consultation").fadeIn(0);
-        	}
-  		});
-  	});
-  </script>
-
-
 </head>
 
 <body>
@@ -206,7 +195,7 @@
 	</nav>
 
 	<!--Conteúdo-->
-	<div class="container-fluid" style="margin-left: 2rem">
+	<div class="container-fluid">
 		<form>
 			
 			<div class="form-check form-check-inline">
@@ -218,7 +207,7 @@
 			  <label class="form-check-label" for="consultation">Retorno</label>
 			</div>
 
-			<div class="row" id="firts-consultation" style="display: none;">
+			<div class="row" id="firts-consultation">
 				<div class="col-md-auto">
 					
 					<div class="span5" id="sandbox-container">

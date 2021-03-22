@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="style/style-screen-Hearder.css">
   <link rel="stylesheet" type="text/css" href="style/style-screen-ProfessionalService.css">
   <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
+  <script src="javascript/jquery.min.js"></script>
   <script type="text/javascript" src="javascript/jquery-3.5.1.js "></script>
   <script type="text/javascript" src="javascript/JQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
   
@@ -224,6 +225,8 @@
 			 	</div>
 
 		    </div>
+
+		    <!--Atendimento-->
 		    <div class="col-9">
 
 		      <h5>Consultório 01 - Médico 01</h5>
@@ -263,8 +266,7 @@
 					      	<div class="row" style="margin-top: 0.5rem">
 					      		<div class="col-sm">
 					      			<h7>Motivo da Consulta</h7>
-					      			<textarea class="form-control" id="reason" disabled rows="5">
-					      				Paciente se queixa de fortes dores de cabeça, no dia anterior apresentou febre alta e vário enjoos.
+					      			<textarea class="form-control" id="reason" disabled rows="5">Paciente se queixa de fortes dores de cabeça, no dia anterior apresentou febre alta e vário enjoos.
 					      			</textarea>
 					      		</div>
 					      	</div>
@@ -304,25 +306,68 @@
 					</div>
 
 					<div class="row">
-						<div class="col">
-					      <h6>Diagnóstico</h6>
+						
+				      <div class="col">
+				      	<h6>Diagnóstico</h6>
 
-					      <textarea class="form-control" rows="5"></textarea>
-					    </div>
+				      	<textarea class="form-control" rows="5"></textarea>
+				      </div>
+					    
+					</div>
+					<div class="row">
 					    <div class="col">
-					      <h6>Receita</h6>
+					    	<h6>Receita</h6>
 
-					      <textarea class="form-control" rows="5"></textarea>
+					      	<textarea class="form-control" rows="5"></textarea>
 					    </div>
 					</div>
 
 					<div class="row">
 						<div class="col">
-							<h6>Retorno</h6>
+							<h6>Observações</h6>
+
+							<textarea class="form-control" rows="5"></textarea>
 						</div>
 					</div>
 		    	</div>
 		    </div>
+
+		    <!--Mais Opções-->
+		    <div class="col-md-auto">
+		    	<div class="option">
+
+			    	<h5>Opções</h5>
+
+			    		<div class="row">
+			    			<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exam"><img src="style/icons/exam.png" style="width: 2rem"> Exames</button>
+				    	</div>
+
+				    	<div class="row">
+				    		<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#prescription"><img src="style/icons/prescription.png" style="width: 2rem"> Prescrição</button>	
+				    	</div>
+
+				    	<div class="row">
+				    		<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#attestation"><img src="style/icons/attestation.png" style="width: 2rem"> Atestado</button>
+				    	</div>
+
+				    	<div class="row">
+				    		<button type="button" class="btn btn-light"><img src="style/icons/surgery.png" style="width: 2.2rem"> Agen. Cirúrgico</button>
+				    	</div>
+
+				    	<div class="row">
+				    		<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#files">
+				    			<img src="style/icons/file.png" style="width: 2.5rem"> Arquivos <span class="badge badge-success align-top" style="background-color: blue">0</span>
+				    		</button>
+				    	</div>
+
+				    	<div class="row" style="margin-top: 4rem"> 
+				    		<button type="button" class="btn btn-primary">
+				    			Finalizar <br> Atendimento
+				    		</button>
+				    	</div>
+				    </div>
+		    </div>
+
 		  </div>
 		  		
 	</div>
@@ -373,6 +418,126 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!--Modal dos Exames-->
+	<div class="modal fade" id="exam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Solicitar Exames</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+
+	      	<input type="text" class="form-control" placeholder="Digite os Exames:">
+
+	      	<br>
+
+	      	<div class="row">
+	      		<div class="col-6">
+	      			<ul class="list-group">
+					  <li class="list-group-item">Exame 01 <input class="form-check-input" type="checkbox"></li>
+					  <li class="list-group-item">Exame 04 <input class="form-check-input" type="checkbox"></li>
+					  <li class="list-group-item">Exame 05 <input class="form-check-input" type="checkbox"></li>
+					</ul>
+	      		</div>
+
+	      		<div class="col-6">
+	      			<h7>Selecionados:</h7>
+
+	      			<ul class="list-group">
+					  <li class="list-group-item">Exame 02 <input class="form-check-input" type="checkbox" checked></li>
+					  <li class="list-group-item">Exame 03 <input class="form-check-input" type="checkbox" checked></li>
+					</ul>
+	      		</div>
+	      	</div>
+	        
+	      
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+	        <button type="button" class="btn btn-primary">Salvar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!--Modal da prescrição-->
+	<div class="modal fade" id="prescription" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Prescrição</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        
+		      	<input type="text" class="form-control" placeholder="Digite os Remédios:">
+
+		      	<br>
+
+		      	<div class="row">
+		      		<div class="col-6">
+		      			<ul class="list-group">
+						  <li class="list-group-item">Medicação 01 <input class="form-check-input" type="checkbox"></li>
+						  <li class="list-group-item">Medicação 02 <input class="form-check-input" type="checkbox"></li>
+						  <li class="list-group-item">Medicação 03 <input class="form-check-input" type="checkbox"></li>
+						  <li class="list-group-item">Medicação 04 <input class="form-check-input" type="checkbox"></li>
+						  <li class="list-group-item">Medicação 05 <input class="form-check-input" type="checkbox"></li>
+						</ul>
+		      		</div>
+
+		      </div>
+
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+		        <button type="button" class="btn btn-primary">Salvar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+
+	<!-- Modal de Atestado-->
+	<div class="modal fade" id="attestation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Atestado</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal dos Arquivos-->
+	<div class="modal fade" id="files" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Arquivos <span class="badge badge-success align-top" style="background-color: blue">0</span></h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        arquivos
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
 	      </div>
 	    </div>
 	  </div>

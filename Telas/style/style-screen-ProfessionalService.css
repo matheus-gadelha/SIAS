@@ -23,3 +23,8 @@ h6{
 	overflow: auto;
 	font-size: 1rem;
 }
+
+.option{
+	position: sticky;
+    top: 2rem;
+}
