@@ -1,0 +1,30 @@
+.row{
+	margin-bottom: 1rem;
+}
+
+.col{
+	margin-left: 1.7rem;
+}
+
+h5{
+	text-align: center;
+}
+
+h6{
+	background-color: #41A7F0;
+	border-top-left-radius: 0.2rem;
+	border-top-right-radius: 0.2rem;
+	margin-bottom: 0.1rem;
+	padding: 0.1rem
+}
+
+#reason{
+	resize: none;
+	overflow: auto;
+	font-size: 1rem;
+}
+
+.option{
+	position: sticky;
+    top: 2rem;
+}
