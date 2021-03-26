@@ -8,8 +8,7 @@ label{
 
 #info-user{
 	background-color: #DCDCDC;
-  border-top-left-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem;
+  border-radius: 0.3rem;
 }
 
 #content-head{
