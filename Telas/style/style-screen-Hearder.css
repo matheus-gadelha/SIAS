@@ -7,9 +7,13 @@ label{
 }
 
 #info-user{
-	background-color: #DCDCDC;
+	background-color: #1E90FF;
   border-radius: 0.3rem;
 }
+#not{
+  background-color: red;
+}
+
 
 #content-head{
 	margin-top: -2.7%;
