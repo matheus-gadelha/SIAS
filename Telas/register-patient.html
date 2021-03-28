@@ -439,7 +439,10 @@
           <div class="container">
             <form class="row g-3 needs-validation" novalidate>
                 <!--1° linha-->
-                <div class="row">
+                <div class="row" style="margin-top: 0.5rem">
+
+                  <h4>Dados do Paciente</h4>
+
                   <div class="col-sm">
                     <div class="mb-3">
                       <label for="register-sus" class="form-label">CNS(Cartão Nacional de Saúde)</label><label class="mandatory">*</label>
@@ -571,6 +574,8 @@
 
                 </div>
 
+                <hr>
+
                 <h4>Documentos Pessoais</h4>
 
                 <!--5° linha-->
@@ -687,7 +692,7 @@
                   <div class="col-sm">
                     <div class="mb-3">
                       <label for="register-rg" class="form-label">RG</label><label class="mandatory">*</label>
-                      <input type="text" class="form-control" name="rg-patient" id="register-rg" placeholder="N° do RG" required>
+                      <input type="text" class="form-control" name="rg-patient" id="register-rg" placeholder="N° do RG (somente números)" required>
 
                       <div class="invalid-feedback">
                         Por favor digite o Rg do paciente.
@@ -761,6 +766,7 @@
 
                 </div>
 
+                <hr>
 
                 <h4>Certidão/Cartório</h4>
 
@@ -859,6 +865,9 @@
 
                 </div>
 
+
+                <hr>
+
                 <!--9° linha-->
                  <div class="row">
                   <div class="col-6">
@@ -879,7 +888,16 @@
 
                   </div>
 
-                  <div class="col-sm" style="margin-top: 2rem;">
+                </div>
+
+                <hr>
+
+                <!--10° linha-->
+                <div class="row" style="margin-top: 1rem"> 
+
+                  <h4>Documentos digitalizados</h4>
+
+                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="files">
                       <label class="form-check-label" for="files">
@@ -888,19 +906,20 @@
                     </div>
                   </div>
 
-                  <div class="col-sm" id="up-files" style="display: none;">
+                  <div class="col-5" id="up-files" style="display: none;">
                     <div class="mb-3">
                       <label for="formFile" class="form-label">Selecione o arquivo</label>
-                      <input class="form-control" type="file" id="formFile" accept="image/*">
+                      <input class="form-control" type="file" id="formFile" accept="image/*, .pdf">
                     </div>
                   </div>
-
                 </div>
+
+                <hr>
 
                 <div class="row" style="margin-top: 1rem">
                   <div class="form-floating">
                     <textarea class="form-control" id="comments" style="height: 150px; width: 102%; resize: none"></textarea>
-                    <label for="comments"> Observações</label>
+                    <label for="comments" style="font-size: 1rem"> Observações</label>
                   </div>
                 </div>
 
